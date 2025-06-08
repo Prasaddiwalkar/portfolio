@@ -1,0 +1,111 @@
+/* Basic icon styling */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: var(--orange-yellow-crayola);
+}
+
+/* When icons are inside a box */
+.icon-box {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+/* SVG icon styling */
+.icon img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: invert(79%) sepia(53%) saturate(1095%) hue-rotate(334deg) brightness(101%) contrast(96%);
+}
+
+.icon-box .icon img,
+.icon-box img {
+  width: 16px;
+  height: 16px;
+  filter: invert(79%) sepia(53%) saturate(1095%) hue-rotate(334deg) brightness(101%) contrast(96%);
+}
+
+/* Special styling for social links */
+.social-link .icon img,
+.social-link img {
+  filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(100%) contrast(100%);
+  opacity: 0.9;
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover .icon img,
+.social-link:hover img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(100%) contrast(100%);
+  opacity: 1;
+}
+
+/* Navbar icons */
+.navbar-link img {
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(90%) contrast(90%);
+}
+
+.navbar-link.active img {
+  filter: invert(79%) sepia(53%) saturate(1095%) hue-rotate(334deg) brightness(101%) contrast(96%);
+}
+
+/* Light theme adjustments */
+[data-theme="light"] .icon img,
+[data-theme="light"] .icon-box img {
+  filter: invert(20%) sepia(90%) saturate(1500%) hue-rotate(355deg) brightness(90%) contrast(95%);
+}
+
+[data-theme="light"] .social-link img {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(0%) contrast(100%);
+  opacity: 0.8;
+}
+
+[data-theme="light"] .social-link:hover img {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(0%) contrast(100%);
+  opacity: 1;
+}
+
+[data-theme="light"] .navbar-link img {
+  filter: invert(20%) sepia(0%) saturate(0%) hue-rotate(136deg) brightness(30%) contrast(90%);
+}
+
+[data-theme="light"] .navbar-link.active img {
+  filter: invert(20%) sepia(90%) saturate(1500%) hue-rotate(355deg) brightness(90%) contrast(95%);
+}
+
+/* For icon sizing */
+.small-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.medium-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.large-icon {
+  width: 32px;
+  height: 32px;
+}

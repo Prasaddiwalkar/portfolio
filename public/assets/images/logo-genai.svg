@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="18" cy="18" r="16" fill="#fff" fill-opacity="0.01" stroke="#4A90E2" stroke-width="2"/>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="bold" font-size="10" fill="#fff" stroke="#222" stroke-width="0.5" paint-order="stroke" style="text-shadow:0 1px 2px #000;">Gen</text>
+  <text x="50%" y="80%" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="bold" font-size="8" fill="#fff" stroke="#222" stroke-width="0.5" paint-order="stroke" style="text-shadow:0 1px 2px #000;">AI</text>
+</svg> 

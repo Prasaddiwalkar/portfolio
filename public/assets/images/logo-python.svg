@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="36" height="36" fill="none"/>
+  <ellipse cx="18" cy="18" rx="15" ry="15" fill="#fff" fill-opacity="0.01" stroke="#306998" stroke-width="2"/>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-weight="bold" font-size="10" fill="#fff" stroke="#222" stroke-width="0.5" paint-order="stroke" style="text-shadow:0 1px 2px #000;">Py</text>
+  <ellipse cx="25" cy="24" rx="4" ry="2" fill="#FFD43B" stroke="#306998" stroke-width="1"/>
+</svg> 

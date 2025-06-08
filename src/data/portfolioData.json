@@ -1,0 +1,261 @@
+{
+  "personalInfo": {
+    "name": "Prasad Deshpande",
+    "avatar": "/assets/images/my-avatar.png",
+    "title": "Passionate for Solving Problems, Technology and Gen AI",
+    "aboutMe": [
+      "I bring over 17 years of experience in Software Product Development, with a strong focus on building reliable and resilient enterprise systems that drive business value. I currently lead the design and development of a modern Quote-to-Cash (QTC) Architecture",
+      "I played a key role in leading the Siemens Partner App Ecosystem initiative, where I was instrumental in partner onboarding and streamlining Application Developement. I'm passionate about delivering customer-centric solutions, driving operational excellence, and aligning technical execution with strategic business objectives. I work closely with stakeholders across functions to ensure transparency, alignment, and measurable outcomes."
+    ],
+    "contacts": [
+      {
+        "icon": "/assets/images/icons/mail-outline.svg",
+        "title": "Email",
+        "value": "prasad.diwalkar@gmail.com",
+        "link": "mailto:prasad.diwalkar@gmail.com"
+      },
+      {
+        "icon": "/assets/images/icons/phone-portrait-outline.svg",
+        "title": "Phone",
+        "value": "+91-9970046406",
+        "link": "+91-9970046406"
+      },
+      {
+        "icon": "/assets/images/icons/calendar-outline.svg",
+        "title": "Birthday",
+        "value": "January 13, 1985"
+      },
+      {
+        "icon": "/assets/images/icons/location-outline.svg",
+        "title": "Location",
+        "value": "Pune, India"
+      },
+      {
+        "icon": "/assets/images/icons/document-text-outline.svg",
+        "title": "Resume",
+        "value": "Download CV",
+        "link": "https://drive.google.com/file/d/1sBE_KUT1ax7KTSS48KVmwkU-jSVAtzZU/view?usp=sharing"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "LinkedIn",
+        "icon": "/assets/images/icons/logo-linkedin.svg",
+        "url": "https://www.linkedin.com/in/prasaddiwalkar/"
+      }
+    ]
+  },
+  "services": [
+    {
+      "icon": "/assets/images/icon-dev.svg",
+      "title": "Product Development",
+      "description": "Leveraging Generative AI to transform business processes and create innovative solutions."
+    },
+    {
+      "icon": "/assets/images/icon-design.svg",
+      "title": "Gen AI",
+      "description": "Leveraging Generative AI to transform business processes and create innovative solutions."
+    },
+    {
+      "icon": "/assets/images/icon-app.svg",
+      "title": "Cloud Computing",
+      "description": "Professional deployment and management of cloud infrastructure and applications."
+    },
+    {
+      "icon": "/assets/images/icon-photo.svg",
+      "title": "Platform Engineering",
+      "description": "Implementing product lifecycle management solutions for manufacturing and industry."
+    }
+  ],
+  "technologies": [
+    {
+      "icon": "/assets/images/logo-genai.svg",
+      "name": "GenAI",
+      "title": "GenAI"
+    },
+    {
+      "icon": "/assets/images/logo-python.svg",
+      "name": "Python",
+      "title": "Python"
+    },
+    {
+      "icon": "/assets/images/logo-aws.svg",
+      "name": "AWS",
+      "title": "AWS"
+    },
+    {
+      "icon": "/assets/images/logo-cloud.svg",
+      "name": "Cloud",
+      "title": "Cloud & SaaS Architecture"
+    },
+    {
+      "icon": "/assets/images/logo-langgraph.svg",
+      "name": "LangGraph",
+      "title": "LangGraph"
+    },
+    {
+      "icon": "/assets/images/logo-langchain.svg",
+      "name": "LangChain",
+      "title": "LangChain"
+    },
+    {
+      "icon": "/assets/images/logo-llamaindex.svg",
+      "name": "LlamaIndex",
+      "title": "LlamaIndex"
+    },
+    {
+      "icon": "/assets/images/logo-vector.svg",
+      "name": "Vector DB",
+      "title": "Vector Databases"
+    },
+    {
+      "icon": "/assets/images/logo-kg.svg",
+      "name": "Knowledge Graphs",
+      "title": "Knowledge Graphs"
+    },
+    {
+      "icon": "/assets/images/logo-anthropic.svg",
+      "name": "Claude/LLaMA",
+      "title": "Anthropic Claude / LLaMA"
+    },
+    {
+      "icon": "/assets/images/logo-teamcenter.svg",
+      "name": "Teamcenter",
+      "title": "Teamcenter / PLM Platforms"
+    },
+    {
+      "icon": "/assets/images/logo-devops.svg",
+      "name": "DevOps",
+      "title": "DevOps"
+    }
+  ],
+  "expertiseAreas": [
+    { "name": "Generative AI Architecture" },
+    { "name": "LLM & Agent Systems" },
+    { "name": "Manufacturing Systems" },
+    { "name": "Technical Pre-sales" },
+    { "name": "Leadership & Mentoring" },
+    { "name": "Project Management" },
+    { "name": "Cloud Infrastructure" },
+    { "name": "Platform Engineering" },
+    { "name": "PLM Architecture" },
+    { "name": "Enterprise Software" },
+    { "name": "System Integration" },
+    { "name": "API Development" },
+    { "name": "Digital Transformation" }
+  ],
+  "skills": {
+    "technical": [
+      {
+        "name": "Gen AI",
+        "level": 80
+      },
+      {
+        "name": "PLM",
+        "level": 90
+      },
+      {
+        "name": "Web development",
+        "level": 70
+      },
+      {
+        "name": "Python",
+        "level": 85
+      },
+      {
+        "name": "JavaScript",
+        "level": 75
+      },
+      {
+        "name": "Cloud Computing",
+        "level": 80
+      }
+    ],
+    "soft": [
+      {
+        "name": "Leadership",
+        "level": 90
+      },
+      {
+        "name": "Communication",
+        "level": 85
+      },
+      {
+        "name": "Problem Solving",
+        "level": 95
+      },
+      {
+        "name": "Team Management",
+        "level": 85
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "timeframe": "2002 — 2006",
+        "degree": "B.E. In Computer Science and Engineering",
+        "institution": "SRTMU",
+        "description": "Graduated with First class in Computer Science and Engineering, with a focus on software development and systems engineering."
+      }
+    ],
+    "experience": [
+      {
+        "timeframe": "2022 — Present",
+        "position": "Senior Staff Software Engineer",
+        "company": "Equinix Inc.",
+        "description": "Leading large-scale projects with a focus on Enterprise Architecture and Gen AI solutions Quote-To-Cash."
+      },
+      {
+        "timeframe": "2019 — 2022",
+        "position": "Software Engineer - Senior",
+        "company": "Siemens Industry Software",
+        "description": "Led technical teams and architected Platform Engineering for Siemens Products."
+      },
+      {
+        "timeframe": "2014 — 2019",
+        "position": "Software Engineer - Advanced",
+        "company": "Siemens Industry Software",
+        "description": "Managed development of software solutions with focus on manufacturing systems integration."
+      },
+      {
+        "timeframe": "2011 — 2014",
+        "position": "Software Engineer",
+        "company": "Siemens Industry Software",
+        "description": "Developed and maintained applications for industrial clients."
+      },
+      {
+        "timeframe": "2007 — 2010",
+        "position": "Implementation Engineer",
+        "company": "Siemens Industry Software",
+        "description": "Developed and maintained applications for industrial clients."
+      },{
+        "timeframe": "2007 — 2010",
+        "position": "Software Engineer - Intern",
+        "company": "Siemens Industry Software",
+        "description": "Trainee Engineer."
+      }
+
+    ]
+  },
+  "projects": [
+    {
+      "category": "web development",
+      "title": "Enterprise PLM Portal",
+      "image": "/assets/images/project-1.jpg",
+      "description": "Web portal for PLM system access and management"
+    },
+    {
+      "category": "gen ai",
+      "title": "AI Document Analyzer",
+      "image": "/assets/images/project-2.jpg",
+      "description": "AI-powered system for technical document analysis"
+    },
+    {
+      "category": "cloud",
+      "title": "Cloud Infrastructure",
+      "image": "/assets/images/project-3.jpg",
+      "description": "Scalable cloud infrastructure for manufacturing systems"
+    }
+  ]
+} 
