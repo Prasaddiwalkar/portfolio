@@ -28,10 +28,12 @@ export interface Technology {
   icon: string;
   name: string;
   title?: string;
+  achievement?: string;
 }
 
 export interface ExpertiseArea {
   name: string;
+  achievement?: string;
 }
 
 export interface Testimonial {

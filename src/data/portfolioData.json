@@ -71,78 +71,129 @@
     {
       "icon": "/assets/images/logo-genai.svg",
       "name": "GenAI",
-      "title": "GenAI"
+      "title": "GenAI",
+      "achievement": "Expertise in building Gen AI applications with LLMs, RAG, and agentic systems for enterprise solutions."
     },
     {
       "icon": "/assets/images/logo-python.svg",
       "name": "Python",
-      "title": "Python"
+      "title": "Python",
+      "achievement": "Proficient in Python development with focus on AI/ML frameworks, data processing, and backend services."
     },
     {
       "icon": "/assets/images/logo-aws.svg",
       "name": "AWS",
-      "title": "AWS"
+      "title": "AWS",
+      "achievement": "Experience implementing scalable cloud solutions on AWS, including EC2, S3, Lambda, and managed AI services."
     },
     {
       "icon": "/assets/images/logo-cloud.svg",
       "name": "Cloud",
-      "title": "Cloud & SaaS Architecture"
+      "title": "Cloud & SaaS Architecture",
+      "achievement": "Designed and implemented cloud-native architectures for SaaS products with focus on scalability and resilience."
     },
     {
       "icon": "/assets/images/logo-langgraph.svg",
       "name": "LangGraph",
-      "title": "LangGraph"
+      "title": "LangGraph",
+      "achievement": "Building complex, stateful multi-agent systems using LangGraph for enterprise workflows."
     },
     {
       "icon": "/assets/images/logo-langchain.svg",
       "name": "LangChain",
-      "title": "LangChain"
+      "title": "LangChain",
+      "achievement": "Developing production-grade LLM applications using LangChain for document processing and retrieval systems."
     },
     {
       "icon": "/assets/images/logo-llamaindex.svg",
       "name": "LlamaIndex",
-      "title": "LlamaIndex"
+      "title": "LlamaIndex",
+      "achievement": "Creating advanced RAG systems with LlamaIndex for enterprise knowledge retrieval and document processing."
     },
     {
       "icon": "/assets/images/logo-vector.svg",
       "name": "Vector DB",
-      "title": "Vector Databases"
+      "title": "Vector Databases",
+      "achievement": "Implementing and optimizing vector databases for semantic search and similarity matching in AI applications."
     },
     {
       "icon": "/assets/images/logo-kg.svg",
       "name": "Knowledge Graphs",
-      "title": "Knowledge Graphs"
+      "title": "Knowledge Graphs",
+      "achievement": "Building knowledge graphs for complex domain modeling and intelligent data retrieval systems."
     },
     {
       "icon": "/assets/images/logo-anthropic.svg",
       "name": "Claude/LLaMA",
-      "title": "Anthropic Claude / LLaMA"
+      "title": "Anthropic Claude / LLaMA",
+      "achievement": "Working with various LLMs including Claude and LLaMA for enterprise applications with focus on reasoning and safety."
     },
     {
       "icon": "/assets/images/logo-teamcenter.svg",
       "name": "Teamcenter",
-      "title": "Teamcenter / PLM Platforms"
+      "title": "Teamcenter / PLM Platforms",
+      "achievement": "Expert in Teamcenter customization, integration, and deployment for large manufacturing enterprises."
     },
     {
       "icon": "/assets/images/logo-devops.svg",
       "name": "DevOps",
-      "title": "DevOps"
+      "title": "DevOps",
+      "achievement": "Implementing CI/CD pipelines, infrastructure as code, and automated testing for enterprise software delivery."
     }
   ],
   "expertiseAreas": [
-    { "name": "Generative AI Architecture" },
-    { "name": "LLM & Agent Systems" },
-    { "name": "Manufacturing Systems" },
-    { "name": "Technical Pre-sales" },
-    { "name": "Leadership & Mentoring" },
-    { "name": "Project Management" },
-    { "name": "Cloud Infrastructure" },
-    { "name": "Platform Engineering" },
-    { "name": "PLM Architecture" },
-    { "name": "Enterprise Software" },
-    { "name": "System Integration" },
-    { "name": "API Development" },
-    { "name": "Digital Transformation" }
+    { 
+      "name": "Generative AI Architecture",
+      "achievement": "Designed and implemented enterprise-grade Gen AI solutions focusing on RAG systems and multi-agent architectures."
+    },
+    { 
+      "name": "LLM & Agent Systems",
+      "achievement": "Built complex agentic systems using LangGraph and other frameworks for enterprise workflow automation."
+    },
+    { 
+      "name": "Manufacturing Systems",
+      "achievement": "Led development of manufacturing systems integration solutions for global enterprises."
+    },
+    { 
+      "name": "Technical Pre-sales",
+      "achievement": "Successfully conducted technical demonstrations and proof-of-concepts leading to significant new business."
+    },
+    { 
+      "name": "Leadership & Mentoring",
+      "achievement": "Mentored junior engineers and led cross-functional teams to deliver complex enterprise solutions."
+    },
+    { 
+      "name": "Project Management",
+      "achievement": "Managed multiple concurrent projects using agile methodologies, ensuring on-time delivery within budget."
+    },
+    { 
+      "name": "Cloud Infrastructure",
+      "achievement": "Designed and implemented cloud infrastructure solutions focusing on scalability, security, and cost optimization."
+    },
+    { 
+      "name": "Platform Engineering",
+      "achievement": "Led platform engineering initiatives to create developer-friendly, self-service infrastructure platforms."
+    },
+    { 
+      "name": "PLM Architecture",
+      "achievement": "Designed comprehensive PLM architectures for enterprise-wide product lifecycle management."
+    },
+    { 
+      "name": "Enterprise Software",
+      "achievement": "Developed robust, scalable enterprise software solutions focusing on reliability and performance."
+    },
+    { 
+      "name": "System Integration",
+      "achievement": "Successfully integrated diverse enterprise systems using APIs, middleware, and custom connectors."
+    },
+    { 
+      "name": "API Development",
+      "achievement": "Created comprehensive API ecosystems with focus on developer experience and documentation."
+    },
+    { 
+      "name": "Digital Transformation",
+      "achievement": "Led digital transformation initiatives resulting in significant efficiency improvements and cost savings."
+    }
   ],
   "skills": {
     "technical": [

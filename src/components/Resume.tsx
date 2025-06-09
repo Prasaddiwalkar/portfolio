@@ -127,6 +127,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
           border-radius: 0;
           box-shadow: none;
           padding: 0;
+          overflow: visible;
         }
         
         .article-title {

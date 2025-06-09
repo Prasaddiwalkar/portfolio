@@ -19,17 +19,19 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
       <div className="main-content">
         <Navbar activePage={activePage} setActivePage={setActivePage} />
         
-        <About 
-          personalInfo={portfolio.personalInfo} 
-          services={portfolio.services}
-          technologies={portfolio.technologies}
-          expertiseAreas={portfolio.expertiseAreas}
-        />
-        
-        <Resume 
-          skills={portfolio.skills} 
-          resume={portfolio.resume}
-        />
+        <div className="content-container">
+          <About 
+            personalInfo={portfolio.personalInfo} 
+            services={portfolio.services}
+            technologies={portfolio.technologies}
+            expertiseAreas={portfolio.expertiseAreas}
+          />
+          
+          <Resume 
+            skills={portfolio.skills} 
+            resume={portfolio.resume}
+          />
+        </div>
 
         <style>
           {`
@@ -43,6 +45,7 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
               flex-direction: column;
               min-height: calc(100vh - 90px);
               position: relative;
+              padding-top: 15px;
             }
             
             .main-content {
@@ -51,27 +54,36 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
               background: var(--eerie-black-2);
               border: 1px solid var(--jet);
               border-radius: 20px;
-              padding: 20px;
+              padding: 30px;
+              padding-top: 35px;
               box-shadow: var(--shadow-1);
               margin-bottom: 15px;
             }
-            
-            article {
+
+            .content-container {
+              height: 100%;
               overflow-y: auto;
-              padding-top: 15px;
+              padding-top: 10px;
+            }
+            
+            .sidebar {
+              margin-top: 5px;
+              margin-bottom: 15px;
             }
             
             @media (min-width: 768px) {
               main {
                 min-height: calc(100vh - 120px);
+                padding-top: 20px;
               }
               
               .main-content {
                 padding: 30px;
+                padding-top: 40px;
               }
               
-              article {
-                padding-top: 20px;
+              .sidebar {
+                margin-top: 0;
               }
             }
             
@@ -85,18 +97,24 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
                 flex: 0 0 350px;
                 position: sticky;
                 top: 20px;
-                height: calc(100vh - 40px);
+                height: auto;
+                max-height: calc(100vh - 40px);
+                margin-top: 20px;
               }
               
               .main-content {
                 flex: 1;
                 height: calc(100vh - 40px);
-                overflow-y: auto;
+                overflow: hidden;
                 margin-top: 20px;
+                display: flex;
+                flex-direction: column;
               }
-              
-              article {
-                padding-top: 10px;
+
+              .content-container {
+                flex: 1;
+                overflow-y: auto;
+                padding-right: 5px;
               }
             }
           `}

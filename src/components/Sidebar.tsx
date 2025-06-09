@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
   };
 
   return (
-    <aside className={`sidebar ${isOpen ? 'active' : ''}`}>
+    <aside className={`sidebar ${isOpen ? 'active' : ''} has-scrollbar`}>
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img src={personalInfo.avatar} alt={personalInfo.name} width="80" />
@@ -105,6 +105,85 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
             color: var(--white-2);
             font-size: var(--fs-7);
             font-style: normal;
+          }
+          
+          .sidebar {
+            padding: 20px;
+            max-height: 120px;
+          }
+          
+          .sidebar.active {
+            overflow-y: auto;
+            max-height: fit-content;
+          }
+          
+          .sidebar-info {
+            gap: 15px;
+          }
+          
+          .avatar-box img {
+            width: 80px;
+          }
+          
+          .info-content .name {
+            margin-bottom: 10px;
+          }
+          
+          .contacts-list {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            gap: 18px;
+          }
+          
+          .contact-item {
+            margin-bottom: 5px;
+          }
+          
+          .separator {
+            margin: 15px 0;
+          }
+          
+          @media (max-width: 767px) {
+            .sidebar {
+              min-height: 120px;
+            }
+            
+            .sidebar.active {
+              max-height: auto;
+              overflow-y: auto;
+            }
+            
+            .contacts-list {
+              gap: 15px;
+            }
+          }
+          
+          @media (min-width: 768px) {
+            .sidebar {
+              padding: 25px;
+              max-height: 140px;
+            }
+            
+            .avatar-box img {
+              width: 100px;
+            }
+            
+            .sidebar-info {
+              gap: 20px;
+            }
+            
+            .contacts-list {
+              gap: 20px;
+            }
+          }
+          
+          @media (min-width: 1024px) {
+            .sidebar {
+              padding: 30px;
+              height: auto;
+              max-height: calc(100vh - 40px);
+              overflow-y: auto;
+            }
           }
         `}
       </style>

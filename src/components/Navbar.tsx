@@ -40,16 +40,16 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
       <style>{`
         .navbar {
           position: absolute;
-          top: -20px;
-          right: -20px;
+          top: 0;
+          right: 0;
           display: flex;
           border-radius: 0 20px;
           overflow: hidden;
-          background: linear-gradient(145deg, var(--eerie-black-1), var(--smoky-black));
-          box-shadow: var(--shadow-3);
-          z-index: 10;
-          border: 2px solid var(--jet);
-          margin-bottom: 30px;
+          background: var(--eerie-black-1);
+          box-shadow: var(--shadow-2);
+          z-index: 100;
+          border: 1px solid var(--jet);
+          transform: translate(10px, -10px);
         }
         
         .navbar-list {
@@ -63,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
         }
         
         .navbar-item:not(:last-child) {
-          border-right: 2px solid var(--jet);
+          border-right: 1px solid var(--jet);
         }
         
         .navbar-link {
@@ -71,62 +71,73 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
           align-items: center;
           justify-content: center;
           color: var(--white-1);
-          font-weight: var(--fw-600);
-          padding: 16px 30px;
+          font-weight: var(--fw-500);
+          padding: 14px 22px;
           transition: all var(--transition-1);
           background: transparent;
           border: none;
           cursor: pointer;
-          font-size: var(--fs-4);
+          font-size: 15px;
           letter-spacing: 0.5px;
-          text-transform: uppercase;
-          gap: 10px;
         }
         
         .nav-icon {
-          width: 22px;
-          height: 22px;
-          filter: brightness(1.8);
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+          filter: brightness(1.5);
           transition: all var(--transition-1);
+        }
+        
+        .navbar-link:hover {
+          color: var(--orange-yellow-crayola);
         }
         
         .navbar-link:hover .nav-icon,
         .navbar-link.active .nav-icon {
           filter: invert(79%) sepia(53%) saturate(1095%) hue-rotate(334deg) brightness(101%) contrast(96%);
-          transform: scale(1.1);
-        }
-        
-        .navbar-link:hover {
-          color: var(--orange-yellow-crayola);
-          background-color: rgba(0, 0, 0, 0.3);
         }
         
         .navbar-link.active {
           color: var(--orange-yellow-crayola);
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
-          box-shadow: inset 0 -4px 0 var(--orange-yellow-crayola);
+          font-weight: var(--fw-600);
+          position: relative;
+        }
+        
+        .navbar-link.active::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: var(--orange-yellow-crayola);
         }
         
         @media (min-width: 580px) {
+          .navbar {
+            transform: translate(8px, -8px);
+          }
+          
           .navbar-link {
-            padding: 20px 35px;
-            font-size: var(--fs-3);
+            padding: 16px 26px;
+            font-size: 16px;
           }
           
           .nav-icon {
-            width: 26px;
-            height: 26px;
+            width: 20px;
+            height: 20px;
           }
         }
         
         /* Light theme adjustments */
         [data-theme="light"] .navbar {
-          background: linear-gradient(145deg, var(--onyx), var(--jet));
+          background: var(--onyx);
           border-color: var(--light-gray);
         }
         
         [data-theme="light"] .navbar-item:not(:last-child) {
-          border-right: 2px solid var(--light-gray-70);
+          border-right: 1px solid var(--light-gray-70);
         }
         
         [data-theme="light"] .navbar-link {
