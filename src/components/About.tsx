@@ -24,7 +24,14 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
 
       {/* Services Section */}
       <section className="service">
-        <h3 className="h3 service-title">{getLabel('about.whatImDoing')}</h3>
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <span className="icon">
+              <img src="/assets/images/icons/build-outline.svg" alt="Services icon" />
+            </span>
+          </div>
+          <h3 className="h3 service-title">{getLabel('about.whatImDoing')}</h3>
+        </div>
 
         <ul className="service-list">
           {services.map((service, index) => (
@@ -44,7 +51,15 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
 
       {/* Areas of Expertise Section */}
       <section className="expertise-section">
-        <h3 className="h3 service-title">{getLabel('about.areasOfExpertise')}</h3>
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <span className="icon">
+              <img src="/assets/images/icons/ribbon-outline.svg" alt="Expertise icon" />
+            </span>
+          </div>
+          <h3 className="h3 service-title">{getLabel('about.areasOfExpertise')}</h3>
+        </div>
+        
         <div className="expertise-list">
           {expertiseAreas.map((area, index) => {
             // Check if the area is Platform Engineering
@@ -72,7 +87,15 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
       
       {/* Technologies Section */}
       <section className="technologies">
-        <h3 className="h3 technologies-title">{getLabel('about.technologies')}</h3>
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <span className="icon">
+              <img src="/assets/images/icons/code-slash-outline.svg" alt="Technologies icon" />
+            </span>
+          </div>
+          <h3 className="h3 technologies-title">{getLabel('about.technologies')}</h3>
+        </div>
+        
         <div className="technologies-icons">
           {technologies.map((tech, index) => {
             // Check if the tech is DevOps
@@ -98,6 +121,20 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
           })}
         </div>
       </section>
+
+      <style>{`
+        .about {
+          background: transparent;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          padding: 0;
+        }
+        
+        .article-title {
+          margin-bottom: 20px;
+        }
+      `}</style>
     </article>
   );
 };

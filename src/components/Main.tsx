@@ -15,10 +15,9 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
   return (
     <main>
       <Sidebar personalInfo={portfolio.personalInfo} />
+      <Navbar activePage={activePage} setActivePage={setActivePage} />
       
       <div className="main-content">
-        <Navbar activePage={activePage} setActivePage={setActivePage} />
-        
         <About 
           personalInfo={portfolio.personalInfo} 
           services={portfolio.services}
@@ -42,19 +41,23 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
               display: flex;
               flex-direction: column;
               min-height: calc(100vh - 90px);
+              position: relative;
             }
             
             .main-content {
               flex: 1;
-              padding: 15px 0;
-              display: flex;
-              flex-direction: column;
+              position: relative;
+              background: var(--eerie-black-2);
+              border: 1px solid var(--jet);
+              border-radius: 20px;
+              padding: 20px;
+              box-shadow: var(--shadow-1);
+              margin-bottom: 15px;
             }
             
             article {
-              flex: 1;
               overflow-y: auto;
-              max-height: calc(100vh - 240px);
+              padding-top: 15px;
             }
             
             @media (min-width: 768px) {
@@ -63,11 +66,11 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
               }
               
               .main-content {
-                padding: 20px 0;
+                padding: 30px;
               }
               
               article {
-                max-height: calc(100vh - 280px);
+                padding-top: 20px;
               }
             }
             
@@ -86,11 +89,13 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
               
               .main-content {
                 flex: 1;
-                padding: 25px 0;
+                height: calc(100vh - 40px);
+                overflow-y: auto;
+                margin-top: 20px;
               }
               
               article {
-                max-height: none;
+                padding-top: 10px;
               }
             }
           `}

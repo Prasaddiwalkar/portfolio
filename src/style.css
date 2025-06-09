@@ -2349,3 +2349,67 @@ textarea.form-input::-webkit-resizer { display: none; }
 .icon-devops {
   /* Slightly adjust devops icon if needed */
 }
+
+/* Common styles for section titles */
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title-wrapper .icon-box {
+  position: relative;
+  margin-right: 20px;
+  background: var(--bg-gradient-onyx);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.title-wrapper img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Consistent spacing for all sections */
+.about-text,
+.service,
+.expertise-section,
+.technologies,
+.timeline,
+.skill {
+  margin-bottom: 40px;
+}
+
+/* Make expertise section consistent with other sections */
+.expertise-section .title-wrapper,
+.technologies .title-wrapper,
+.service .title-wrapper {
+  margin-bottom: 25px;
+}
+
+/* Make section headings consistent */
+.service-title,
+.technologies-title,
+.skills-title {
+  font-size: var(--fs-3);
+  margin-bottom: 0;
+}
+
+/* Add consistent spacing between items */
+.expertise-list,
+.technologies-icons,
+.service-list,
+.timeline-list,
+.skills-list {
+  padding: 0 5px;
+}
+
+/* Consistent dark/light theme colors */
+[data-theme="light"] .title-wrapper .icon-box {
+  background: var(--bg-gradient-yellow-1);
+}

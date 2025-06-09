@@ -46,7 +46,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
         <div className="title-wrapper">
           <div className="icon-box">
             <span className="icon">
-              <img src="/assets/images/icons/book-outline.svg" alt="Experience icon" />
+              <img src="/assets/images/icons/briefcase-outline.svg" alt="Experience icon" />
             </span>
           </div>
           <h3 className="h3">{getLabel('resume.experience')}</h3>
@@ -65,7 +65,15 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
       </section>
 
       <section className="skill">
-        <h3 className="h3 skills-title">{getLabel('resume.technicalSkills')}</h3>
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <span className="icon">
+              <img src="/assets/images/icons/hardware-chip-outline.svg" alt="Technical skills icon" />
+            </span>
+          </div>
+          <h3 className="h3 skills-title">{getLabel('resume.technicalSkills')}</h3>
+        </div>
+        
         <ul className="skills-list content-card">
           {skills.technical.map((skill, index) => (
             <li className="skills-item" key={index}>
@@ -85,7 +93,15 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
       </section>
 
       <section className="skill">
-        <h3 className="h3 skills-title">{getLabel('resume.softSkills')}</h3>
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <span className="icon">
+              <img src="/assets/images/icons/people-outline.svg" alt="Soft skills icon" />
+            </span>
+          </div>
+          <h3 className="h3 skills-title">{getLabel('resume.softSkills')}</h3>
+        </div>
+        
         <ul className="skills-list content-card">
           {skills.soft.map((skill, index) => (
             <li className="skills-item" key={index}>
@@ -103,6 +119,20 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
           ))}
         </ul>
       </section>
+
+      <style>{`
+        .resume {
+          background: transparent;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          padding: 0;
+        }
+        
+        .article-title {
+          margin-bottom: 20px;
+        }
+      `}</style>
     </article>
   );
 };
