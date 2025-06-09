@@ -1,5 +1,6 @@
 import React from 'react';
 import { PersonalInfo, Service, Technology, ExpertiseArea } from '../types';
+import getLabel from '../utils/labelUtils';
 
 interface AboutProps {
   personalInfo: PersonalInfo;
@@ -12,7 +13,7 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
   return (
     <article className="about active" data-page="about">
       <header>
-        <h2 className="h2 article-title">About me</h2>
+        <h2 className="h2 article-title">{getLabel('about.title')}</h2>
       </header>
 
       <section className="about-text">
@@ -23,7 +24,7 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
 
       {/* Services Section */}
       <section className="service">
-        <h3 className="h3 service-title">What i'm doing</h3>
+        <h3 className="h3 service-title">{getLabel('about.whatImDoing')}</h3>
 
         <ul className="service-list">
           {services.map((service, index) => (
@@ -43,7 +44,7 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
 
       {/* Areas of Expertise Section */}
       <section className="expertise-section">
-        <h3 className="h3 service-title">Areas of Expertise</h3>
+        <h3 className="h3 service-title">{getLabel('about.areasOfExpertise')}</h3>
         <div className="expertise-list">
           {expertiseAreas.map((area, index) => {
             // Check if the area is Platform Engineering
@@ -71,7 +72,7 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
       
       {/* Technologies Section */}
       <section className="technologies">
-        <h3 className="h3 technologies-title">Technologies</h3>
+        <h3 className="h3 technologies-title">{getLabel('about.technologies')}</h3>
         <div className="technologies-icons">
           {technologies.map((tech, index) => {
             // Check if the tech is DevOps

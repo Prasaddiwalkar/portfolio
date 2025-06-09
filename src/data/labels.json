@@ -1,0 +1,36 @@
+{
+  "sidebar": {
+    "showMore": "Show More",
+    "showLess": "Show Less",
+    "themeDark": "Switch to light mode",
+    "themeLight": "Switch to dark mode"
+  },
+  "about": {
+    "title": "About me",
+    "whatImDoing": "What i'm doing",
+    "areasOfExpertise": "Areas of Expertise",
+    "technologies": "Technologies"
+  },
+  "resume": {
+    "title": "Resume",
+    "education": "Education",
+    "experience": "Experience",
+    "technicalSkills": "Technical Skills",
+    "softSkills": "Soft Skills"
+  },
+  "navbar": {
+    "about": "About",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "contacts": {
+    "email": "Email",
+    "phone": "Phone",
+    "birthday": "Birthday",
+    "location": "Location",
+    "resume": "Resume",
+    "downloadCV": "Download CV"
+  }
+} 

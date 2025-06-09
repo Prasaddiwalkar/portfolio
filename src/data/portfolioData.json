@@ -10,31 +10,31 @@
     "contacts": [
       {
         "icon": "/assets/images/icons/mail-outline.svg",
-        "title": "Email",
+        "titleKey": "contacts.email",
         "value": "prasad.diwalkar@gmail.com",
         "link": "mailto:prasad.diwalkar@gmail.com"
       },
       {
         "icon": "/assets/images/icons/phone-portrait-outline.svg",
-        "title": "Phone",
+        "titleKey": "contacts.phone",
         "value": "+91-9970046406",
         "link": "+91-9970046406"
       },
       {
         "icon": "/assets/images/icons/calendar-outline.svg",
-        "title": "Birthday",
+        "titleKey": "contacts.birthday",
         "value": "January 13, 1985"
       },
       {
         "icon": "/assets/images/icons/location-outline.svg",
-        "title": "Location",
+        "titleKey": "contacts.location",
         "value": "Pune, India"
       },
       {
-        "icon": "/assets/images/icons/document-text-outline.svg",
-        "title": "Resume",
-        "value": "Download CV",
-        "link": "https://drive.google.com/file/d/1cs8vh5FyzhL9Bed5myoioaJWYt5iZyx-/view?usp=sharing"
+        "icon": "/assets/images/icons/download-outline.svg",
+        "titleKey": "contacts.resume",
+        "valueKey": "contacts.downloadCV",
+        "link": "https://drive.google.com/uc?export=download&id=1cs8vh5FyzhL9Bed5myoioaJWYt5iZyx-"
       }
     ],
     "socials": [

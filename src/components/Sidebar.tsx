@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PersonalInfo } from '../types';
+import getLabel from '../utils/labelUtils';
 
 interface SidebarProps {
   personalInfo: PersonalInfo;
@@ -34,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
           className="info_more-btn" 
           onClick={() => setIsOpen(!isOpen)}
         >
-          <span>Show {isOpen ? 'Less' : 'More'}</span>
+          <span>{isOpen ? getLabel('sidebar.showLess') : getLabel('sidebar.showMore')}</span>
           <span className="icon">
             <img 
               src={isOpen ? "/assets/images/icons/chevron-up.svg" : "/assets/images/icons/chevron-down.svg"} 
@@ -45,7 +46,7 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
 
         <button 
           className="theme-btn" 
-          title={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
+          title={isDarkMode ? getLabel('sidebar.themeDark') : getLabel('sidebar.themeLight')}
           onClick={toggleTheme}
         >
           {isDarkMode ? '☀️' : '🌙'}
@@ -59,14 +60,24 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
           {personalInfo.contacts.map((contact, index) => (
             <li className="contact-item" key={index}>
               <div className="icon-box">
-                <img src={contact.icon} alt={contact.title} width="16" />
+                <img src={contact.icon} alt={contact.titleKey ? getLabel(contact.titleKey) : ''} width="16" />
               </div>
 
               <div className="contact-info">
-                <p className="contact-title">{contact.title}</p>
+                <p className="contact-title">{contact.titleKey ? getLabel(contact.titleKey) : ''}</p>
 
                 {contact.link ? (
-                  <a href={contact.link} className="contact-link">{contact.value}</a>
+                  <a 
+                    href={contact.link} 
+                    className="contact-link"
+                    {...(contact.valueKey === 'contacts.downloadCV' ? { 
+                      download: "Prasad_Deshpande_CV.pdf", 
+                      target: "_blank", 
+                      rel: "noopener noreferrer" 
+                    } : {})}
+                  >
+                    {contact.valueKey ? getLabel(contact.valueKey) : contact.value}
+                  </a>
                 ) : (
                   <p className="contact-value">{contact.value}</p>
                 )}

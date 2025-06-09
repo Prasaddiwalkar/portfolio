@@ -1,5 +1,6 @@
 import React from 'react';
 import { Education, Experience, Skill } from '../types';
+import getLabel from '../utils/labelUtils';
 
 interface ResumeProps {
   skills: {
@@ -16,7 +17,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
   return (
     <article className="resume active" data-page="resume">
       <header>
-        <h2 className="h2 article-title">Resume</h2>
+        <h2 className="h2 article-title">{getLabel('resume.title')}</h2>
       </header>
 
       <section className="timeline">
@@ -26,7 +27,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
               <img src="/assets/images/icons/book-outline.svg" alt="Education icon" />
             </span>
           </div>
-          <h3 className="h3">Education</h3>
+          <h3 className="h3">{getLabel('resume.education')}</h3>
         </div>
 
         <ol className="timeline-list">
@@ -48,7 +49,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
               <img src="/assets/images/icons/book-outline.svg" alt="Experience icon" />
             </span>
           </div>
-          <h3 className="h3">Experience</h3>
+          <h3 className="h3">{getLabel('resume.experience')}</h3>
         </div>
 
         <ol className="timeline-list">
@@ -64,7 +65,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
       </section>
 
       <section className="skill">
-        <h3 className="h3 skills-title">Technical Skills</h3>
+        <h3 className="h3 skills-title">{getLabel('resume.technicalSkills')}</h3>
         <ul className="skills-list content-card">
           {skills.technical.map((skill, index) => (
             <li className="skills-item" key={index}>
@@ -84,7 +85,7 @@ const Resume: React.FC<ResumeProps> = ({ skills, resume }) => {
       </section>
 
       <section className="skill">
-        <h3 className="h3 skills-title">Soft Skills</h3>
+        <h3 className="h3 skills-title">{getLabel('resume.softSkills')}</h3>
         <ul className="skills-list content-card">
           {skills.soft.map((skill, index) => (
             <li className="skills-item" key={index}>

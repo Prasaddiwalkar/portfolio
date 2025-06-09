@@ -1,4 +1,5 @@
 import React from 'react';
+import getLabel from '../utils/labelUtils';
 
 interface NavbarProps {
   activePage: string;
@@ -18,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
             className={`navbar-link ${activePage === 'about' ? 'active' : ''}`} 
             onClick={() => handleNavClick('about')}
           >
-            About
+            {getLabel('navbar.about')}
           </button>
         </li>
 
@@ -27,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
             className={`navbar-link ${activePage === 'resume' ? 'active' : ''}`} 
             onClick={() => handleNavClick('resume')}
           >
-            Resume
+            {getLabel('navbar.resume')}
           </button>
         </li>
 

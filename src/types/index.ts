@@ -1,7 +1,9 @@
 export interface Contact {
   icon: string;
-  title: string;
-  value: string;
+  title?: string;
+  titleKey?: string;
+  value?: string;
+  valueKey?: string;
   link?: string;
 }
 
