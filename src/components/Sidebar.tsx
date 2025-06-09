@@ -115,6 +115,7 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
           .sidebar.active {
             overflow-y: auto;
             max-height: fit-content;
+            padding-bottom: 0;
           }
           
           .sidebar-info {
@@ -143,6 +144,12 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
             margin: 15px 0;
           }
           
+          /* Fix for extra space at bottom */
+          .social-list {
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+          
           @media (max-width: 767px) {
             .sidebar {
               min-height: 120px;
@@ -151,6 +158,7 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
             .sidebar.active {
               max-height: auto;
               overflow-y: auto;
+              padding-bottom: 0;
             }
             
             .contacts-list {
@@ -183,6 +191,27 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
               height: auto;
               max-height: calc(100vh - 40px);
               overflow-y: auto;
+              padding-bottom: 20px;
+            }
+          }
+          
+          /* Fix for large screens */
+          @media (min-width: 1250px) {
+            .sidebar {
+              position: sticky;
+              top: 60px;
+              width: 20%;
+              height: auto;
+              padding-bottom: 0;
+            }
+            
+            .social-list {
+              margin-bottom: 0;
+              padding-bottom: 0;
+            }
+            
+            .sidebar-info_more {
+              padding-bottom: 0;
             }
           }
         `}

@@ -4,6 +4,7 @@ import { fetchPortfolioData } from './services/dataService';
 import Main from './components/Main';
 import './style.css';
 import './icon-styles.css';
+import './font-styles.css';
 
 const App: React.FC = () => {
   const [portfolio, setPortfolio] = useState<Portfolio | null>(null);

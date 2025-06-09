@@ -1,0 +1,110 @@
+/* Standardized Font Styles */
+
+/* Override font sizes to use only 3 standard sizes */
+:root {
+  /* Standard font sizes */
+  --fs-large: 28px;  /* Large - for main headings */
+  --fs-medium: 20px; /* Medium - for subheadings */
+  --fs-normal: 17px; /* Normal - for body text */
+  
+  /* Standard font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 600;
+}
+
+/* Heading styles */
+.h2 { 
+  font-size: var(--fs-large) !important; 
+  font-weight: var(--fw-bold) !important;
+}
+
+.h3 { 
+  font-size: var(--fs-medium) !important;
+  font-weight: var(--fw-bold) !important;
+}
+
+.h4 { 
+  font-size: var(--fs-medium) !important;
+  font-weight: var(--fw-medium) !important;
+}
+
+.h5 {
+  font-size: var(--fs-normal) !important;
+  font-weight: var(--fw-medium) !important;
+}
+
+/* General text elements */
+.article-title {
+  font-size: var(--fs-large) !important;
+  font-weight: var(--fw-bold) !important;
+}
+
+/* Content text */
+.about-text,
+.timeline-text,
+.service-item-text,
+.testimonials-text,
+.modal-content p,
+.modal-content time,
+.blog-text,
+.timeline-text,
+.contact-title,
+.contact-info :is(.contact-link, time, address),
+.contact-value,
+.expertise-item span,
+.tech-item span,
+.project-category,
+.blog-meta :is(.blog-category, time) {
+  font-size: var(--fs-normal) !important;
+  font-weight: var(--fw-regular) !important;
+}
+
+/* Title elements */
+.timeline-item-title,
+.service-item-title,
+.project-title,
+.blog-item-title,
+.testimonials-item-title,
+.modal-title {
+  font-size: var(--fs-medium) !important;
+  font-weight: var(--fw-medium) !important;
+}
+
+/* Navigation and interface elements */
+.navbar-link {
+  font-size: var(--fs-normal) !important;
+  font-weight: var(--fw-medium) !important;
+}
+
+.navbar-link.active {
+  font-weight: var(--fw-bold) !important;
+}
+
+/* Info content */
+.info-content .name {
+  font-size: var(--fs-medium) !important;
+  font-weight: var(--fw-bold) !important;
+}
+
+.info-content .title {
+  font-size: var(--fs-normal) !important;
+  font-weight: var(--fw-regular) !important;
+}
+
+/* Form elements */
+.form-input,
+.form-input::placeholder,
+.form-btn {
+  font-size: var(--fs-normal) !important;
+  font-weight: var(--fw-regular) !important;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 580px) {
+  :root {
+    --fs-large: 24px;
+    --fs-medium: 18px;
+    --fs-normal: 16px;
+  }
+} 
