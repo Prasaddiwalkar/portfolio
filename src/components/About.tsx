@@ -177,7 +177,7 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
       <style>{`
         .about {
           background: transparent;
-          border: none;
+          border: none !important;
           border-radius: 0;
           box-shadow: none;
           padding: 0;
@@ -186,6 +186,114 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
         
         .article-title {
           margin-bottom: 20px;
+        }
+        
+        .about-text p {
+          margin-bottom: 15px;
+          line-height: 1.6;
+        }
+        
+        .title-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 25px;
+          margin-top: 30px;
+        }
+        
+        .icon-box {
+          background: var(--bg-secondary);
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 12px;
+        }
+        
+        .icon-box img {
+          width: 24px;
+          height: 24px;
+        }
+        
+        .service-title, .technologies-title {
+          color: var(--text-primary);
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        
+        .service-item {
+          padding: 20px;
+          border-radius: 15px;
+          background: var(--bg-secondary);
+          margin-bottom: 20px;
+          border: 1px solid var(--border-visible);
+        }
+        
+        .service-icon-box {
+          margin-bottom: 15px;
+        }
+        
+        .service-item-title {
+          margin-bottom: 10px;
+          font-size: 1.2rem;
+          color: var(--text-primary);
+        }
+        
+        .service-item-text {
+          line-height: 1.6;
+        }
+        
+        .expertise-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          margin-bottom: 30px;
+        }
+        
+        .expertise-item {
+          background: var(--bg-secondary);
+          padding: 10px 15px;
+          border-radius: 30px;
+          display: inline-flex;
+          align-items: center;
+          color: var(--text-primary);
+          font-size: 0.9rem;
+          border: 1px solid var(--border-visible);
+        }
+        
+        .expertise-item.with-icon {
+          padding-left: 10px;
+        }
+        
+        .expertise-item img {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+        
+        .technologies-icons {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+          gap: 20px;
+        }
+        
+        .tech-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+        }
+        
+        .tech-item img {
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+        }
+        
+        .tech-item span {
+          font-size: 0.85rem;
         }
         
         /* Tooltip styling */
@@ -199,15 +307,15 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
           bottom: calc(100% + 15px);
           left: 50%;
           transform: translateX(-50%);
-          background: var(--eerie-black-1);
-          color: var(--white-2);
+          background: var(--bg-secondary);
+          color: var(--text-secondary);
           padding: 12px 15px;
           border-radius: 8px;
           font-size: var(--fs-7);
           width: max-content;
           max-width: 250px;
           box-shadow: var(--shadow-2);
-          border: 1px solid var(--jet);
+          border: 1px solid var(--border-visible);
           z-index: 100;
           line-height: 1.5;
           text-align: left;
@@ -222,18 +330,21 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
           transform: translateX(-50%);
           border-width: 10px 8px 0;
           border-style: solid;
-          border-color: var(--eerie-black-1) transparent transparent transparent;
+          border-color: var(--bg-secondary) transparent transparent transparent;
         }
         
-        /* Light theme tooltip adjustments */
-        [data-theme="light"] .tooltip-content {
-          background: hsl(0, 0%, 95%);
-          color: hsl(0, 0%, 5%);
-          border-color: hsl(0, 0%, 80%);
-        }
-        
-        [data-theme="light"] .tooltip-content::after {
-          border-color: hsl(0, 0%, 95%) transparent transparent transparent;
+        @media (min-width: 768px) {
+          .technologies-icons {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+          }
+          
+          .service-title, .technologies-title {
+            font-size: 1.7rem;
+          }
+          
+          .service-item-title {
+            font-size: 1.3rem;
+          }
         }
       `}</style>
     </article>
