@@ -39,16 +39,17 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
       
       <style>{`
         .navbar {
-          position: fixed;
-          top: 20px;
-          right: 20px;
+          position: absolute;
+          top: -20px;
+          right: -20px;
           display: flex;
-          border-radius: 14px;
+          border-radius: 0 20px;
           overflow: hidden;
           background: linear-gradient(145deg, var(--eerie-black-1), var(--smoky-black));
           box-shadow: var(--shadow-3);
           z-index: 10;
           border: 2px solid var(--jet);
+          margin-bottom: 30px;
         }
         
         .navbar-list {
@@ -107,11 +108,6 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
         }
         
         @media (min-width: 580px) {
-          .navbar {
-            top: 30px;
-            right: 30px;
-          }
-          
           .navbar-link {
             padding: 20px 35px;
             font-size: var(--fs-3);
@@ -120,13 +116,6 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
           .nav-icon {
             width: 26px;
             height: 26px;
-          }
-        }
-        
-        @media (min-width: 1024px) {
-          .navbar {
-            top: 30px;
-            right: 30px;
           }
         }
         

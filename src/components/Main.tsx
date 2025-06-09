@@ -15,9 +15,10 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
   return (
     <main>
       <Sidebar personalInfo={portfolio.personalInfo} />
-      <Navbar activePage={activePage} setActivePage={setActivePage} />
       
       <div className="main-content">
+        <Navbar activePage={activePage} setActivePage={setActivePage} />
+        
         <About 
           personalInfo={portfolio.personalInfo} 
           services={portfolio.services}
