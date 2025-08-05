@@ -257,8 +257,15 @@ p, span, li, a:not(.tab-button) {
 }
 
 .ai-chat-toggle.disconnected {
-  background: #757575;
-  cursor: not-allowed;
+  background: linear-gradient(135deg, #5a4a0f, #6b5b13, #8b6914) !important;
+  border: 2px solid #6b5b13;
+  cursor: pointer;
+}
+
+.ai-chat-toggle.active.disconnected {
+  background: linear-gradient(135deg, #ffd700, #ffed4e, #fff59d);
+  border: 2px solid #ffc107;
+  cursor: pointer;
 }
 
 .ai-chat-toggle .spin {
@@ -425,11 +432,6 @@ p, span, li, a:not(.tab-button) {
   .service-list {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-/* AI Agent disconnected icon styling */
-.ai-agent-disconnected {
-  opacity: 0.5;
 }
 
 /* Critical overrides for base styles that interfere with responsive layout */

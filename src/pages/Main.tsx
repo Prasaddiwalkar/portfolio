@@ -157,14 +157,32 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
             <path d="M12,4V2A10,10 0 0,0 2,12H4A8,8 0 0,1 12,4Z"/>
           </svg>
         ) : aiAgentStatus === AI_AGENT_STATUS.CONNECTED ? (
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12,2A2,2 0 0,1 14,4V8A2,2 0 0,1 12,10A2,2 0 0,1 10,8V4A2,2 0 0,1 12,2M12,12A8,8 0 0,1 20,20H4A8,8 0 0,1 12,12M12,14A6,6 0 0,0 6,20H18A6,6 0 0,0 12,14M10,6A1,1 0 0,0 9,7A1,1 0 0,0 10,8A1,1 0 0,0 11,7A1,1 0 0,0 10,6M14,6A1,1 0 0,0 13,7A1,1 0 0,0 14,8A1,1 0 0,0 15,7A1,1 0 0,0 14,6Z"/>
-          </svg>
+          <img 
+            src="/assets/images/BotAvatar.png" 
+            alt="AI Assistant Connected" 
+            width="32" 
+            height="32" 
+            className="ai-agent-connected"
+            style={{ 
+              background: 'linear-gradient(135deg, #ffd700, #ffed4e, #fff59d)',
+              filter: 'brightness(1.3) contrast(1.2)',
+              borderRadius: '6px',
+              padding: '2px'
+            }}
+          />
         ) : (
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="ai-agent-disconnected">
-            <path d="M12,2A2,2 0 0,1 14,4V8A2,2 0 0,1 12,10A2,2 0 0,1 10,8V4A2,2 0 0,1 12,2M12,12A8,8 0 0,1 20,20H4A8,8 0 0,1 12,12M12,14A6,6 0 0,0 6,20H18A6,6 0 0,0 12,14M10,6A1,1 0 0,0 9,7A1,1 0 0,0 10,8A1,1 0 0,0 11,7A1,1 0 0,0 10,6M14,6A1,1 0 0,0 13,7A1,1 0 0,0 14,8A1,1 0 0,0 15,7A1,1 0 0,0 14,6Z"/>
-            <path d="M3 3L21 21" stroke="currentColor" strokeWidth="2"/>
-          </svg>
+          <img 
+            src="/assets/images/BotAvatar.png" 
+            alt="AI Assistant Disconnected" 
+            width="32" 
+            height="32" 
+            className="ai-agent-disconnected bg-gradient-yellow"
+            style={{ 
+              background: 'linear-gradient(135deg, #5a4a0f, #6b5b13, #8b6914)',
+              borderRadius: '6px',
+              padding: '2px'
+            }}
+          />
         )}
       </button>
 
