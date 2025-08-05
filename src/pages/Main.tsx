@@ -6,6 +6,7 @@ import { NAVIGATION_PAGES, AI_AGENT_STATUS, type NavigationPage } from '../const
 import About from './About';
 import Resume from './Resume';
 import { aiService } from '../services/aiService';
+import { getStaticResponse } from '../services/staticChatService';
 import getLabel from '../utils/labelUtils';
 import '../styles/components/ui/AIChat.css';
 import '../styles/components/pages/Main.css';
@@ -31,7 +32,12 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
       try {
         updateAIStatus(AI_AGENT_STATUS.CHECKING);
         
-        // Check if AI agent is available
+        // For now, always use static responses until RAG is implemented
+        // TODO: Replace this with actual AI service when RAG is ready
+        updateAIStatus(AI_AGENT_STATUS.DISCONNECTED);
+        
+        // Uncomment below when RAG is implemented:
+        /*
         const isHealthy = await aiService.healthCheck();
         
         if (isHealthy) {
@@ -40,6 +46,7 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
         } else {
           updateAIStatus(AI_AGENT_STATUS.DISCONNECTED);
         }
+        */
       } catch (error) {
         console.error('Failed to initialize AI service:', error);
         updateAIStatus(AI_AGENT_STATUS.DISCONNECTED);
@@ -59,10 +66,17 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
 
   const handleAIMessage = async (message: string): Promise<string> => {
     try {
-      return await aiService.sendMessage(message, portfolio);
+      // If AI service is connected, use it
+      if (aiAgentStatus === AI_AGENT_STATUS.CONNECTED) {
+        return await aiService.sendMessage(message, portfolio);
+      } else {
+        // Otherwise, use static responses
+        return getStaticResponse(message);
+      }
     } catch (error) {
       console.error('AI message error:', error);
-      return "I'm sorry, I'm having trouble responding right now. Please try again later.";
+      // Fallback to static responses if AI service fails
+      return getStaticResponse(message);
     }
   };
 
@@ -130,7 +144,7 @@ const Main: React.FC<MainProps> = ({ portfolio }) => {
             ? "Chat with AI Assistant" 
             : aiAgentStatus === AI_AGENT_STATUS.CHECKING
             ? "Connecting to AI Assistant..."
-            : "AI Assistant unavailable"
+            : "Chat with AI Assistant (Static Responses)"
         }
         disabled={aiAgentStatus === AI_AGENT_STATUS.CHECKING}
       >

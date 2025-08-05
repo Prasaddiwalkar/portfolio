@@ -1,0 +1,72 @@
+{
+  "defaultQA": [
+    {
+      "question": "What is Prasad's current role and experience?",
+      "answer": "**Current Role:** Senior Staff Software Engineer at Equinix Inc. (2022-Present)\n\n**Key Responsibilities:**\n• Leading large-scale projects focusing on Enterprise Architecture\n• Developing Gen AI solutions for Quote-To-Cash systems\n• Managing digital transformation initiatives\n\n**Experience:** 17+ years in Software Product Development, specializing in building reliable, scalable enterprise systems that deliver business value.",
+      "keywords": ["experience", "role", "current", "position", "equinix", "senior staff", "years"]
+    },
+    {
+      "question": "What technologies does Prasad specialize in?",
+      "answer": "**Core Technologies:**\n• **Java** (90%) - Enterprise application development\n• **Spring Boot** (85%) - Microservices architecture\n• **Python** (85%) - Backend, automation, AI/ML\n• **Kafka** (80%) - Event-driven architecture\n\n**Specialized Skills:**\n• Temporal workflow orchestration\n• gRPC, REST APIs, GraphQL\n• Microservices, Docker, Kubernetes\n• AWS Cloud Platform (75%)\n• Gen AI: LangGraph/LangChain\n• PLM Systems: Teamcenter (90%)",
+      "keywords": ["technologies", "skills", "java", "spring", "python", "kafka", "temporal", "microservices", "docker", "kubernetes", "aws", "genai"]
+    },
+    {
+      "question": "What is Prasad's expertise in Gen AI and LLM systems?",
+      "answer": "**Enterprise Gen AI Solutions:**\n• Architected and delivered enterprise-grade Gen AI systems\n• Built RAG (Retrieval-Augmented Generation) systems\n• Developed multi-agent workflows for business automation\n\n**Technical Expertise:**\n• **LangGraph/LangChain** - Building agentic systems\n• **Vector Databases** - Intelligent data retrieval\n• **Graph Databases** - Complex data relationships\n• **LLM Integration** - Workflow optimization\n\n**Current Focus:** Exploring LLM-based automation for enterprise workflow optimization.",
+      "keywords": ["genai", "ai", "llm", "rag", "langgraph", "langchain", "automation", "vector", "artificial intelligence"]
+    },
+    {
+      "question": "What leadership experience does Prasad have?",
+      "answer": "**Current Leadership Role:**\n• Leading a team of **8 engineers**\n• Focusing on customer-centric solutions with operational excellence\n\n**Leadership Skills:**\n• **Leadership:** 90% proficiency\n• **Team Management:** 85% proficiency\n• **Communication:** 85% proficiency\n• **Problem Solving:** 95% proficiency\n\n**Management Style:**\n• Mentoring engineering teams\n• Fostering technical excellence\n• Promoting growth mindset\n• Driving innovation and best practices",
+      "keywords": ["leadership", "team", "management", "mentor", "lead", "engineers"]
+    },
+    {
+      "question": "What is Prasad's experience with Siemens?",
+      "answer": "**Duration:** 12+ years at Siemens Industry Software (2007-2022)\n\n**Career Progression:**\n• Software Engineer Intern → Software Engineer → Advanced → Senior\n\n**Key Achievements:**\n• **Siemens Partner App Ecosystem** - Led platform engineering\n• **Partner Onboarding** - Streamlined application development\n• **Manufacturing Systems** - Integration solutions\n• **Platform Engineering** - Enterprise-wide initiatives\n\n**Impact:** Transformed partner collaboration and development efficiency across the organization.",
+      "keywords": ["siemens", "platform engineering", "partner ecosystem", "manufacturing", "plm"]
+    },
+    {
+      "question": "What architecture patterns does Prasad work with?",
+      "answer": "**Specialized Architecture Patterns:**\n\n**Event-Driven Architecture:**\n• Designed scalable architectures for Quote-to-Cash processes\n• Lead-to-Cash process optimization\n• Real-time event processing\n\n**Core Expertise:**\n• **Microservices Architecture** (85%)\n• **Enterprise Architecture** (85%)\n• **System Design** (85%)\n\n**Technical Skills:**\n• API development and design\n• Workflow orchestration (Temporal, Kafka, gRPC)\n• Distributed systems design\n• Scalability and performance optimization",
+      "keywords": ["architecture", "event-driven", "microservices", "system design", "enterprise", "patterns"]
+    },
+    {
+      "question": "Where is Prasad located and how can I contact him?",
+      "answer": "**Location:** 📍 Pune, India\n\n**Contact Information:**\n• **Email:** prasad.diwalkar@gmail.com\n• **Phone:** +91-9970046406\n• **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/prasaddiwalkar/)\n\n**Professional Documents:**\n• **Resume:** [Download Resume](https://drive.google.com/uc?export=download&id=1f4tjTgWFmO-wVNPg3xlZt1Fa2rkEjHnx)\n\n*Feel free to reach out for collaboration opportunities or professional discussions!*",
+      "keywords": ["contact", "location", "email", "phone", "linkedin", "resume", "pune", "india", "download"]
+    },
+    {
+      "question": "What projects has Prasad worked on?",
+      "answer": "**Current Project:**\n• **Quote-to-Cash (QTC) Architecture** - Leading design and development of modern enterprise architecture\n\n**Key Projects:**\n\n**🏢 Enterprise PLM Portal**\n• PLM system access and management\n• User interface and workflow optimization\n\n**🤖 AI Document Analyzer**\n• AI-powered technical document analysis\n• Intelligent information extraction\n\n**☁️ Cloud Infrastructure Solutions**\n• Scalable infrastructure for manufacturing systems\n• Enterprise-grade cloud deployment\n\n**Impact:** Delivered solutions that enhanced operational efficiency and business value.",
+      "keywords": ["projects", "plm", "portal", "ai document", "cloud infrastructure", "qtc", "quote-to-cash"]
+    },
+    {
+      "question": "What is Prasad's educational background?",
+      "answer": "**Education:**\n• **Degree:** B.E. in Computer Science and Engineering\n• **Institution:** SRTMU (Swami Ramanand Teerth Marathwada University)\n• **Duration:** 2002 — 2006\n• **Achievement:** First Class Honors\n\n**Focus Areas:**\n• Software Development\n• Systems Engineering\n• Computer Science Fundamentals\n\n**Foundation:** Strong academic background that laid the groundwork for 17+ years of successful software engineering career.",
+      "keywords": ["education", "degree", "computer science", "engineering", "srtmu", "graduation"]
+    },
+    {
+      "question": "What services does Prasad offer?",
+      "answer": "**Professional Services:**\n\n**🚀 Product Development**\n• Digital transformation of Lead-to-Cash processes\n• Enterprise system architecture\n• Business value optimization\n\n**🔧 Platform Engineering**\n• Partner onboarding streamlining\n• Developer-friendly infrastructure\n• Self-service platform solutions\n\n**⚙️ DevOps & Infrastructure**\n• CI/CD pipeline implementation\n• Infrastructure as Code (IaC)\n• Cloud deployment strategies\n\n**🤖 Gen AI Solutions**\n• RAG system development\n• LLM integration\n• Intelligent automation\n\n**👥 Leadership & Management**\n• Team mentoring and development\n• Technical strategy\n• Project management using agile methodologies",
+      "keywords": ["services", "product development", "platform engineering", "devops", "project management", "digital transformation"]
+    },
+    {
+      "question": "What is Prasad's experience with cloud technologies?",
+      "answer": "**Cloud Expertise:**\n\n**☁️ AWS Platform (75%)**\n• Secure, scalable cloud solutions\n• Enterprise application deployment\n• Cloud architecture design\n\n**🐳 Containerization**\n• **Docker** (80%) - Application containerization\n• **Kubernetes** (75%) - Container orchestration\n• **Rancher** - Enterprise container management\n\n**🏗️ Infrastructure as Code (IaC)**\n• Automated infrastructure provisioning\n• Configuration management\n• Deployment automation\n\n**Applications:**\n• Manufacturing systems infrastructure\n• Enterprise application hosting\n• Scalable microservices deployment",
+      "keywords": ["cloud", "aws", "kubernetes", "docker", "rancher", "infrastructure", "containerization"]
+    },
+    {
+      "question": "How experienced is Prasad with DevOps practices?",
+      "answer": "**DevOps Expertise (80% Proficiency):**\n\n**🔄 CI/CD Pipelines**\n• Automated build and deployment\n• Quality gates and testing\n• Release management\n\n**🏗️ Infrastructure as Code (IaC)**\n• Automated infrastructure provisioning\n• Configuration management\n• Environment consistency\n\n**📊 Observability & Monitoring**\n• System monitoring and alerting\n• Logging and log analysis\n• Distributed tracing\n• Performance metrics\n\n**🎯 Operational Excellence**\n• Application deployment automation\n• System reliability engineering\n• Incident response and recovery\n\n**Impact:** Streamlined deployment processes and ensured operational excellence across enterprise applications.",
+      "keywords": ["devops", "cicd", "infrastructure", "monitoring", "observability", "automation", "deployment"]
+    }
+  ],
+  "suggestedQuestions": [
+    "What is Prasad's current role and experience?",
+    "What technologies does Prasad specialize in?",
+    "What is Prasad's expertise in Gen AI?",
+    "What leadership experience does Prasad have?",
+    "What projects has Prasad worked on?",
+    "How can I contact Prasad?"
+  ]
+}
