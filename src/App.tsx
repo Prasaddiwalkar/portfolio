@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Portfolio } from './types';
 import { fetchPortfolioData } from './services/dataService';
-import Main from './components/Main';
-import './style.css';
-import './icon-styles.css';
-import './font-styles.css';
+import { Main } from './pages';
+import './styles/base/style.css';
+import './styles/utils/icon-styles.css';
+import './styles/utils/font-styles.css';
 
 const App: React.FC = () => {
   const [portfolio, setPortfolio] = useState<Portfolio | null>(null);

@@ -2,10 +2,11 @@
   "personalInfo": {
     "name": "Prasad Deshpande",
     "avatar": "/assets/images/my-avatar.png",
-    "title": "Passionate for Solving Problems, Technology and Gen AI",
+    "title": "Problem Solver | Technology & Gen AI Expert",
     "aboutMe": [
-      "I bring over 17 years of experience in Software Product Development, with a strong focus on building reliable and resilient enterprise systems that drive business value. I currently lead the design and development of a modern Quote-to-Cash (QTC) Architecture",
-      "I played a key role in leading the Siemens Partner App Ecosystem initiative, where I was instrumental in partner onboarding and streamlining Application Developement. I'm passionate about delivering customer-centric solutions, driving operational excellence, and aligning technical execution with strategic business objectives. I work closely with stakeholders across functions to ensure transparency, alignment, and measurable outcomes."
+      "I bring 17+ years of experience in Software Product Development, specializing in building reliable, scalable enterprise systems that deliver business value. Currently, I lead the design and development of a modern Quote-to-Cash (QTC) architecture, driving digital transformation through event-driven architecture and AI-powered automation.",
+      "I’m skilled in API development, Kafka, Spring Boot, Temporal workflow orchestration, automation, refactoring, and performance optimization. Leading a team of 8 engineers, I focus on delivering customer-centric solutions with operational excellence.",
+      "Previously, I played a key role in the Siemens Partner App Ecosystem, streamlining partner onboarding and application development. Architecting enterprise-wide AI-driven solutions for decision support and intelligent information retrieval, while actively exploring LLM-based automation for workflow optimization."
     ],
     "contacts": [
       {
@@ -34,7 +35,7 @@
         "icon": "/assets/images/icons/download-outline.svg",
         "titleKey": "contacts.resume",
         "valueKey": "contacts.downloadCV",
-        "link": "https://drive.google.com/uc?export=download&id=1cs8vh5FyzhL9Bed5myoioaJWYt5iZyx-"
+        "link": "https://drive.google.com/uc?export=download&id=1f4tjTgWFmO-wVNPg3xlZt1Fa2rkEjHnx"
       }
     ],
     "socials": [
@@ -49,177 +50,308 @@
     {
       "icon": "/assets/images/icon-dev.svg",
       "title": "Product Development",
-      "description": "Leveraging Generative AI to transform business processes and create innovative solutions."
-    },
-    {
-      "icon": "/assets/images/icon-design.svg",
-      "title": "Gen AI",
-      "description": "Leveraging Generative AI to transform business processes and create innovative solutions."
-    },
-    {
-      "icon": "/assets/images/icon-app.svg",
-      "title": "Cloud Computing",
-      "description": "Professional deployment and management of cloud infrastructure and applications."
+      "description": "Driving digital transformation of Lead-to-Cash (LTC) processes to enhance operational efficiency and deliver innovative business solutions."
     },
     {
       "icon": "/assets/images/icon-photo.svg",
       "title": "Platform Engineering",
-      "description": "Implementing product lifecycle management solutions for manufacturing and industry."
+      "description": "Streamlined partner onboarding and application development by leading the Siemens Partner Ecosystem initiative, enhancing collaboration and delivery efficiency."
+    },
+    {
+      "icon": "/assets/images/devops-2.svg",
+      "title": "DevOps",
+      "description": "Enabling reliable, automated CI/CD pipelines, infrastructure as code (IaC), and robust monitoring to streamline application deployment and ensure operational excellence."
+    },
+    {
+      "icon": "/assets/images/ai-bot.svg",
+      "title": "Gen AI",
+      "description": "Leveraging Generative AI to transform business processes and create innovative solutions."
+    },
+    {
+      "icon": "/assets/images/expert-leadership.svg",
+      "title": "Leadership",
+      "description": "Managing and mentoring engineering teams, fostering technical excellence, and promoting a growth mindset."
+    },
+    {
+      "icon": "/assets/images/expert-leadership.svg",
+      "title": "Project Management",
+      "description": "Delivering complex projects using agile methodologies, ensuring on-time and within-budget delivery."
     }
   ],
   "technologies": [
     {
-      "icon": "/assets/images/logo-genai.svg",
-      "name": "GenAI",
-      "title": "GenAI",
-      "achievement": "Expertise in building Gen AI applications with LLMs, RAG, and agentic systems for enterprise solutions."
+      "icon": "/assets/images/icon-techlead.svg",
+      "name": "Tech Lead",
+      "title": "Tech Lead",
+      "achievement": "Leading engineering teams, driving technical strategy, and ensuring delivery excellence."
+    },
+    {
+      "icon": "/assets/images/icon-architecture.svg",
+      "name": "Enterprise Architecture",
+      "title": "Enterprise Architecture",
+      "achievement": "Designing scalable, robust enterprise systems and architectures."
+    },
+    {
+      "icon": "/assets/images/icon-system-design.svg",
+      "name": "System Design",
+      "title": "System Design",
+      "achievement": "Expertise in designing complex systems for reliability and scalability."
+    },
+    {
+      "icon": "/assets/images/icon-design-patterns.svg",
+      "name": "Design Patterns",
+      "title": "Design Patterns",
+      "achievement": "Applying proven design patterns for maintainable and extensible software."
+    },
+    {
+      "icon": "/assets/images/icon-dsa.svg",
+      "name": "Data Structures & Algorithms",
+      "title": "Data Structures & Algorithms",
+      "achievement": "Strong foundation in algorithms and data structures for efficient problem solving."
+    },
+    {
+      "icon": "/assets/images/logo-java.svg",
+      "name": "Java",
+      "title": "Java",
+      "achievement": "Extensive experience in Java for enterprise application development."
+    },
+    {
+      "icon": "/assets/images/logo-springboot.svg",
+      "name": "Spring Boot",
+      "title": "Spring Boot",
+      "achievement": "Building scalable microservices and APIs using Spring Boot."
     },
     {
       "icon": "/assets/images/logo-python.svg",
       "name": "Python",
-      "title": "Python",
-      "achievement": "Proficient in Python development with focus on AI/ML frameworks, data processing, and backend services."
+      "title": "Python 3.x",
+      "achievement": "Proficient in Python for backend, automation, and AI/ML solutions."
     },
     {
-      "icon": "/assets/images/logo-aws.svg",
-      "name": "AWS",
-      "title": "AWS",
-      "achievement": "Experience implementing scalable cloud solutions on AWS, including EC2, S3, Lambda, and managed AI services."
+      "icon": "/assets/images/logo-cpp.svg",
+      "name": "C/C++",
+      "title": "C/C++",
+      "achievement": "Experience in systems programming and performance-critical applications."
     },
     {
-      "icon": "/assets/images/logo-cloud.svg",
-      "name": "Cloud",
-      "title": "Cloud & SaaS Architecture",
-      "achievement": "Designed and implemented cloud-native architectures for SaaS products with focus on scalability and resilience."
+      "icon": "/assets/images/logo-kafka.svg",
+      "name": "Kafka",
+      "title": "Kafka",
+      "achievement": "Implementing event-driven architectures and real-time data pipelines."
     },
     {
-      "icon": "/assets/images/logo-langgraph.svg",
-      "name": "LangGraph",
-      "title": "LangGraph",
-      "achievement": "Building complex, stateful multi-agent systems using LangGraph for enterprise workflows."
+      "icon": "/assets/images/logo-grpc.svg",
+      "name": "gRPC",
+      "title": "gRPC",
+      "achievement": "Building high-performance, language-agnostic APIs with gRPC."
     },
     {
-      "icon": "/assets/images/logo-langchain.svg",
-      "name": "LangChain",
-      "title": "LangChain",
-      "achievement": "Developing production-grade LLM applications using LangChain for document processing and retrieval systems."
+      "icon": "/assets/images/logo-scim.svg",
+      "name": "SCIM",
+      "title": "SCIM",
+      "achievement": "Implementing identity management and provisioning using SCIM."
     },
     {
-      "icon": "/assets/images/logo-llamaindex.svg",
-      "name": "LlamaIndex",
-      "title": "LlamaIndex",
-      "achievement": "Creating advanced RAG systems with LlamaIndex for enterprise knowledge retrieval and document processing."
+      "icon": "/assets/images/logo-rest.svg",
+      "name": "REST API",
+      "title": "REST API",
+      "achievement": "Designing and developing RESTful APIs for scalable services."
     },
     {
-      "icon": "/assets/images/logo-vector.svg",
-      "name": "Vector DB",
-      "title": "Vector Databases",
-      "achievement": "Implementing and optimizing vector databases for semantic search and similarity matching in AI applications."
+      "icon": "/assets/images/logo-graphql.svg",
+      "name": "GraphQL",
+      "title": "GraphQL",
+      "achievement": "Building flexible and efficient APIs using GraphQL."
     },
     {
-      "icon": "/assets/images/logo-kg.svg",
-      "name": "Knowledge Graphs",
-      "title": "Knowledge Graphs",
-      "achievement": "Building knowledge graphs for complex domain modeling and intelligent data retrieval systems."
+      "icon": "/assets/images/logo-microservices.svg",
+      "name": "Microservices",
+      "title": "Microservices",
+      "achievement": "Architecting and deploying microservices for modular enterprise solutions."
     },
     {
-      "icon": "/assets/images/logo-anthropic.svg",
-      "name": "Claude/LLaMA",
-      "title": "Anthropic Claude / LLaMA",
-      "achievement": "Working with various LLMs including Claude and LLaMA for enterprise applications with focus on reasoning and safety."
-    },
-    {
-      "icon": "/assets/images/logo-teamcenter.svg",
-      "name": "Teamcenter",
-      "title": "Teamcenter / PLM Platforms",
-      "achievement": "Expert in Teamcenter customization, integration, and deployment for large manufacturing enterprises."
+      "icon": "/assets/images/logo-temporal.svg",
+      "name": "Temporal",
+      "title": "Temporal",
+      "achievement": "Orchestrating distributed workflows using Temporal."
     },
     {
       "icon": "/assets/images/logo-devops.svg",
       "name": "DevOps",
       "title": "DevOps",
-      "achievement": "Implementing CI/CD pipelines, infrastructure as code, and automated testing for enterprise software delivery."
+      "achievement": "Implementing CI/CD, automation, and infrastructure as code."
+    },
+    {
+      "icon": "/assets/images/logo-docker.svg",
+      "name": "Docker",
+      "title": "Docker",
+      "achievement": "Containerizing applications for portability and scalability."
+    },
+    {
+      "icon": "/assets/images/logo-k8s.svg",
+      "name": "Kubernetes & Rancher",
+      "title": "K8s & Rancher",
+      "achievement": "Managing container orchestration and deployment with Kubernetes and Rancher."
+    },
+    {
+      "icon": "/assets/images/logo-teamcenter.svg",
+      "name": "Teamcenter",
+      "title": "Teamcenter",
+      "achievement": "Expert in Teamcenter PLM platform customization and integration."
+    },
+    {
+      "icon": "/assets/images/logo-git.svg",
+      "name": "GitLab/GitHub",
+      "title": "GitLab/GitHub",
+      "achievement": "Version control and collaboration using GitLab and GitHub."
+    },
+    {
+      "icon": "/assets/images/logo-observability.svg",
+      "name": "Observability",
+      "title": "Observability",
+      "achievement": "Implementing monitoring, logging, and tracing for system reliability."
+    },
+    {
+      "icon": "/assets/images/logo-aws.svg",
+      "name": "AWS",
+      "title": "AWS",
+      "achievement": "Designing and deploying cloud solutions on AWS."
+    },
+    {
+      "icon": "/assets/images/logo-langgraph.svg",
+      "name": "LangGraph/LangChain",
+      "title": "LangGraph/LangChain",
+      "achievement": "Building agentic and LLM-powered systems for enterprise automation."
+    },
+    {
+      "icon": "/assets/images/logo-vector.svg",
+      "name": "Graphs & Vector DBs",
+      "title": "Graphs & Vector DBs",
+      "achievement": "Implementing graph databases and vector search for intelligent data retrieval."
+    },
+    {
+      "icon": "/assets/images/logo-mcp.svg",
+      "name": "MCP Server",
+      "title": "MCP Server",
+      "achievement": "Experience with MCP Servers."
     }
   ],
   "expertiseAreas": [
-    { 
-      "name": "Generative AI Architecture",
-      "achievement": "Designed and implemented enterprise-grade Gen AI solutions focusing on RAG systems and multi-agent architectures."
+    {
+      "name": "Event-driven Architecture",
+      "achievement": "Designed scalable, event-driven architectures for Quote-to-Cash and Lead-to-Cash processes, driving digital transformation."
     },
-    { 
-      "name": "LLM & Agent Systems",
-      "achievement": "Built complex agentic systems using LangGraph and other frameworks for enterprise workflow automation."
-    },
-    { 
-      "name": "Manufacturing Systems",
-      "achievement": "Led development of manufacturing systems integration solutions for global enterprises."
-    },
-    { 
-      "name": "Technical Pre-sales",
-      "achievement": "Successfully conducted technical demonstrations and proof-of-concepts leading to significant new business."
-    },
-    { 
-      "name": "Leadership & Mentoring",
-      "achievement": "Mentored junior engineers and led cross-functional teams to deliver complex enterprise solutions."
-    },
-    { 
-      "name": "Project Management",
-      "achievement": "Managed multiple concurrent projects using agile methodologies, ensuring on-time delivery within budget."
-    },
-    { 
-      "name": "Cloud Infrastructure",
-      "achievement": "Designed and implemented cloud infrastructure solutions focusing on scalability, security, and cost optimization."
-    },
-    { 
-      "name": "Platform Engineering",
-      "achievement": "Led platform engineering initiatives to create developer-friendly, self-service infrastructure platforms."
-    },
-    { 
-      "name": "PLM Architecture",
-      "achievement": "Designed comprehensive PLM architectures for enterprise-wide product lifecycle management."
-    },
-    { 
-      "name": "Enterprise Software",
-      "achievement": "Developed robust, scalable enterprise software solutions focusing on reliability and performance."
-    },
-    { 
-      "name": "System Integration",
-      "achievement": "Successfully integrated diverse enterprise systems using APIs, middleware, and custom connectors."
-    },
-    { 
-      "name": "API Development",
-      "achievement": "Created comprehensive API ecosystems with focus on developer experience and documentation."
-    },
-    { 
+    {
       "name": "Digital Transformation",
-      "achievement": "Led digital transformation initiatives resulting in significant efficiency improvements and cost savings."
+      "achievement": "Led digital transformation initiatives, optimizing workflows and driving operational efficiency."
+    },
+    {
+      "name": "Platform Engineering",
+      "achievement": "Led platform engineering initiatives, streamlining partner onboarding and enabling developer-friendly, self-service infrastructure."
+    },
+    {
+      "name": "Teamcenter Product Configurator",
+      "achievement": "Product Configurator and PLM solutions."
+    },
+    {
+      "name": "Cloud Infrastructure",
+      "achievement": "Implemented secure, scalable cloud solutions leveraging AWS and Kubernetes for enterprise applications."
+    },
+    {
+      "name": "API & Workflow Orchestration",
+      "achievement": "Built robust API ecosystems and orchestrated distributed workflows using Temporal, Kafka, and gRPC."
+    },
+    {
+      "name": "Leadership & Mentoring",
+      "achievement": "Managed and mentored engineering teams, fostering technical excellence and a growth mindset."
+    },
+    {
+      "name": "Project Management",
+      "achievement": "Delivered complex projects using agile methodologies, ensuring on-time and within-budget delivery."
+    },
+    {
+      "name": "System Integration",
+      "achievement": "Integrated diverse enterprise systems using APIs, middleware, and custom connectors for seamless operations."
+    },
+    
+    {
+      "name": "Gen AI & LLM Systems",
+      "achievement": "Architected and delivered enterprise-grade Gen AI solutions, including RAG systems and multi-agent workflows for business automation."
     }
   ],
   "skills": {
     "technical": [
       {
-        "name": "Gen AI",
-        "level": 80
+      "name": "Java",
+      "level": 90
       },
       {
-        "name": "PLM",
-        "level": 90
+      "name": "Spring Boot",
+      "level": 85
       },
       {
-        "name": "Web development",
-        "level": 70
+      "name": "Python",
+      "level": 85
       },
       {
-        "name": "Python",
-        "level": 85
+      "name": "Kafka",
+      "level": 80
       },
       {
-        "name": "JavaScript",
-        "level": 75
+      "name": "Temporal",
+      "level": 80
       },
       {
-        "name": "Cloud Computing",
-        "level": 80
+      "name": "gRPC",
+      "level": 75
+      },
+      {
+      "name": "REST API",
+      "level": 85
+      },
+      {
+      "name": "GraphQL",
+      "level": 70
+      },
+      {
+      "name": "Microservices",
+      "level": 85
+      },
+      {
+      "name": "DevOps",
+      "level": 80
+      },
+      {
+      "name": "Docker",
+      "level": 80
+      },
+      {
+      "name": "Kubernetes & Rancher",
+      "level": 75
+      },
+      {
+      "name": "AWS",
+      "level": 75
+      },
+      {
+      "name": "Gen AI",
+      "level": 50
+      },
+      {
+      "name": "LangGraph/LangChain",
+      "level": 50
+      },
+      {
+      "name": "PLM (Teamcenter)",
+      "level": 90
+      },
+      {
+      "name": "System Design",
+      "level": 85
+      },
+      {
+      "name": "Enterprise Architecture",
+      "level": 85
       }
     ],
     "soft": [

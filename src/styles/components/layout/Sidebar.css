@@ -1,0 +1,402 @@
+.contact-value {
+  color: var(--text-secondary);
+  font-size: 16px !important;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* Contact Information Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-title {
+  color: var(--text-primary);
+  font-size: 13px !important;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  opacity: 0.9;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.contact-link {
+  color: var(--text-secondary);
+  font-size: 16px !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 1.5;
+  word-break: normal;
+  font-weight: 400;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.contact-link:hover {
+  color: var(--primary-accent);
+}
+
+.icon-box {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 26px !important;
+  min-height: 26px !important;
+  margin-top: 1px !important;
+  flex-shrink: 0 !important;
+}
+
+.icon-box img {
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 0.9 !important;
+}
+
+.sidebar {
+  padding: 0;
+  max-height: none;
+  position: relative;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-visible);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 100%;
+}
+
+.sidebar.active {
+  overflow: hidden;
+  max-height: none;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+}
+
+.sidebar-info {
+  padding: 15px;
+  gap: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-box {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-box img {
+  width: 85px;
+  border-radius: 20px;
+  border: 2px solid var(--border-visible);
+}
+
+.info-content {
+  text-align: center;
+}
+
+.info-content .name {
+  margin-bottom: 3px;
+  font-size: 1.75rem !important;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.1;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+.info-content .title {
+  color: var(--text-secondary);
+  font-size: 1.05rem !important; /* Reduced from 1.15rem */
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2; /* Reduced from 1.3 for tighter spacing */
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  width: fit-content;
+  word-break: break-word; /* Allow breaking long words */
+}
+
+/* Override base CSS hiding behavior - contacts should always be visible */
+.sidebar .sidebar-info_more {
+  padding: 0 10px 10px !important;
+  display: block !important;
+  width: 100% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: none !important;
+  margin: 0 !important;
+}
+
+/* Ensure sidebar is always active for contact visibility */
+.sidebar .sidebar-info_more,
+.sidebar.active .sidebar-info_more {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+.contacts-list {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+  gap: 8px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.contact-item {
+  margin-bottom: 4px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+  padding: 3px 0 !important;
+  min-height: 32px !important;
+  width: 100% !important;
+}
+
+.separator {
+  margin: 6px 0;
+  height: 1px;
+  background-color: var(--border-visible);
+}
+
+/* Social Links Styling */
+.social-list {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.social-item {
+  display: flex;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: var(--border-visible);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: var(--primary-accent);
+  transform: translateY(-2px);
+}
+
+.social-link img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+}
+
+.social-link:hover img {
+  opacity: 1;
+}
+
+/* Show/hide button styling */
+.info_more-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  background: transparent;
+  padding: 8px 12px;
+  border: 1px solid var(--border-visible);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.info_more-btn:hover {
+  color: var(--primary-accent);
+}
+
+.info_more-btn .icon img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(10%) saturate(368%) hue-rotate(179deg) brightness(88%) contrast(85%);
+}
+
+[data-theme="light"] .info_more-btn .icon img {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(10%) saturate(368%) hue-rotate(179deg) brightness(95%) contrast(85%);
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    margin-bottom: 20px;
+  }
+  
+  .contact-title {
+    font-size: 12px !important;
+    letter-spacing: 0.6px;
+  }
+  
+  .contact-value,
+  .contact-link {
+    font-size: 15px !important;
+  }
+  
+  .contact-item {
+    margin-bottom: 3px !important;
+    gap: 8px !important;
+    padding: 2px 0 !important;
+  }
+  
+  .info-content .name {
+    font-size: 1.6rem !important;
+  }
+  
+  .info-content .title {
+    font-size: 1.05rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .avatar-box img {
+    width: 100px;
+  }
+  
+  .sidebar-info {
+    gap: 10px;
+  }
+  
+  .contacts-list {
+    gap: 10px !important;
+  }
+  
+  .info_more-btn {
+    font-size: 15px;
+  }
+  
+  .info-content .name {
+    font-size: 1.85rem !important;
+  }
+  
+  .info-content .title {
+    font-size: 1.2rem !important;
+  }
+  
+  .contact-title {
+    font-size: 13px !important;
+    letter-spacing: 0.8px;
+  }
+  
+  .contact-value,
+  .contact-link {
+    font-size: 16px !important;
+  }
+}
+
+/* High specificity overrides to ensure visibility */
+.sidebar .sidebar-info_more .contacts-list {
+  display: flex !important;
+  flex-direction: column !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sidebar .sidebar-info_more .contact-item {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sidebar .sidebar-info_more .contact-info {
+  display: flex !important;
+  flex-direction: column !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sidebar .sidebar-info_more .contact-title,
+.sidebar .sidebar-info_more .contact-link,
+.sidebar .sidebar-info_more .contact-value {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+/* Override text truncation from base styles */
+.sidebar .info-content .name,
+.sidebar .info-content .title {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+.sidebar .contact-info .contact-link,
+.sidebar .contact-info .contact-value,
+.sidebar .contact-info time,
+.sidebar .contact-info address {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-wrap: normal !important;
+}
+
+.sidebar .contact-info .contact-title {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    height: calc(100vh - 40px);
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    position: sticky;
+    top: 20px;
+    padding: 0;
+  }
+  
+  .sidebar-info {
+    padding: 10px 12px 12px 12px;
+  }
+}
+
+/* Fix for large screens */
+@media (min-width: 1250px) {
+  .social-list {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

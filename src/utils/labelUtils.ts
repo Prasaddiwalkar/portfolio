@@ -8,6 +8,11 @@ import labels from '../data/labels.json';
  */
 export const getLabel = (keyPath: string, defaultValue: string = ''): string => {
   try {
+    // Handle null/undefined input
+    if (!keyPath) {
+      return defaultValue;
+    }
+    
     const keys = keyPath.split('.');
     let value: any = labels;
     

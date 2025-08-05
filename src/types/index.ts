@@ -33,6 +33,7 @@ export interface Technology {
 
 export interface ExpertiseArea {
   name: string;
+  icon?: string;
   achievement?: string;
 }
 
