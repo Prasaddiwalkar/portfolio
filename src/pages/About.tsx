@@ -139,7 +139,7 @@ const About: React.FC<AboutProps> = ({ personalInfo, services, technologies, exp
                 onMouseEnter={() => handleMouseEnter(tooltipId)}
                 onMouseLeave={handleMouseLeave}
               >
-                <img src={tech.icon} alt={tech.name} title={tech.title || tech.name} />
+                {/* <img src={tech.icon} alt={tech.name} title={tech.title || tech.name} /> */}
                 <span>{tech.name}</span>
                 {activeTooltip === tooltipId && tech.achievement && (
                   <div className="tooltip-content">
