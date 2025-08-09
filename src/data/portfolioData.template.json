@@ -1,0 +1,120 @@
+{
+  "personalInfo": {
+    "name": "[YOUR FULL NAME]",
+    "avatar": "/assets/images/my-avatar.png",
+    "title": "[YOUR PROFESSIONAL TITLE]",
+    "aboutMe": [
+      "[PARAGRAPH 1: Brief overview of your experience and current role]",
+      "[PARAGRAPH 2: Key skills and areas of expertise]", 
+      "[PARAGRAPH 3: Notable achievements and career highlights]"
+    ],
+    "contacts": [
+      {
+        "icon": "/assets/images/icons/mail-outline.svg",
+        "titleKey": "contacts.email",
+        "value": "[YOUR EMAIL]",
+        "link": "mailto:[YOUR EMAIL]"
+      },
+      {
+        "icon": "/assets/images/icons/phone-portrait-outline.svg",
+        "titleKey": "contacts.phone",
+        "value": "[YOUR PHONE]",
+        "link": "[YOUR PHONE]"
+      },
+      {
+        "icon": "/assets/images/icons/calendar-outline.svg",
+        "titleKey": "contacts.birthday",
+        "value": "[YOUR BIRTHDAY - OPTIONAL]"
+      },
+      {
+        "icon": "/assets/images/icons/location-outline.svg",
+        "titleKey": "contacts.location",
+        "value": "[YOUR CITY, COUNTRY]"
+      },
+      {
+        "icon": "/assets/images/icons/download-outline.svg",
+        "titleKey": "contacts.resume",
+        "valueKey": "contacts.downloadCV",
+        "link": "[LINK TO YOUR RESUME]"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "LinkedIn",
+        "icon": "/assets/images/icons/logo-linkedin.svg",
+        "url": "[YOUR LINKEDIN URL]"
+      },
+      {
+        "platform": "GitHub",
+        "icon": "/assets/images/icons/logo-github.svg",
+        "url": "[YOUR GITHUB URL - OPTIONAL]"
+      },
+      {
+        "platform": "Twitter",
+        "icon": "/assets/images/icons/logo-twitter.svg", 
+        "url": "[YOUR TWITTER URL - OPTIONAL]"
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "[SERVICE 1 TITLE]",
+      "description": "[SERVICE 1 DESCRIPTION]",
+      "icon": "/assets/images/icon-[SERVICE1].svg"
+    },
+    {
+      "title": "[SERVICE 2 TITLE]", 
+      "description": "[SERVICE 2 DESCRIPTION]",
+      "icon": "/assets/images/icon-[SERVICE2].svg"
+    }
+  ],
+  "skills": {
+    "technologies": [
+      {
+        "name": "[TECHNOLOGY 1]",
+        "level": "[PERCENTAGE]",
+        "category": "[CATEGORY]"
+      }
+    ],
+    "expertise": [
+      {
+        "area": "[EXPERTISE AREA 1]",
+        "level": "[PERCENTAGE]",
+        "description": "[BRIEF DESCRIPTION]"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "[COMPANY NAME]",
+      "position": "[YOUR POSITION]", 
+      "period": "[START DATE] — [END DATE OR Present]",
+      "description": "[DESCRIPTION OF YOUR ROLE AND ACHIEVEMENTS]",
+      "technologies": ["[TECH1]", "[TECH2]"],
+      "highlights": [
+        "[ACHIEVEMENT 1]",
+        "[ACHIEVEMENT 2]"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "[PROJECT TITLE]",
+      "description": "[PROJECT DESCRIPTION]",
+      "image": "/assets/images/project-[NAME].jpg",
+      "technologies": ["[TECH1]", "[TECH2]"],
+      "links": {
+        "demo": "[DEMO URL - OPTIONAL]",
+        "github": "[GITHUB URL - OPTIONAL]"
+      }
+    }
+  ],
+  "education": [
+    {
+      "degree": "[YOUR DEGREE]",
+      "institution": "[INSTITUTION NAME]",
+      "period": "[START YEAR] — [END YEAR]",
+      "description": "[ADDITIONAL INFO - OPTIONAL]"
+    }
+  ]
+}

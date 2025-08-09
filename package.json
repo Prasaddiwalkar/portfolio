@@ -1,7 +1,17 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "portfolio-template",
+  "version": "1.0.0", 
+  "description": "A modern, responsive portfolio template with AI chat integration",
+  "keywords": [
+    "portfolio",
+    "template", 
+    "react",
+    "typescript",
+    "ai-chat",
+    "professional",
+    "responsive"
+  ],
+  "private": false,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -21,13 +31,18 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build", 
     "test": "react-scripts test",
     "test:coverage": "CI=true react-scripts test --coverage --watchAll=false || true",
     "test:coverage:html": "npm run test:coverage && echo 'Jest HTML coverage report generated in coverage/index.html'",
     "coverage:report": "npm run test:coverage && node scripts/generate-coverage-report.js",
     "coverage:open": "./scripts/open-coverage.sh",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "setup": "node setup-portfolio.js",
+    "test:ai": "node tests/test-ai-agent.js",
+    "template:init": "npm run setup",
+    "template:reset": "cp src/data/portfolioData.template.json src/data/portfolioData.json && cp src/data/sampleQA.template.json src/data/sampleQA.json",
+    "template:validate": "node validate-template.js"
   },
   "jest": {
     "collectCoverageFrom": [

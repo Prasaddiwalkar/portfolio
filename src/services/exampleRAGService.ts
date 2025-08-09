@@ -29,8 +29,8 @@ export class ExampleRAGService extends AIService {
           message,
           context: {
             portfolio: portfolioContext,
-            instructions: `You are an AI assistant for Prasad Deshpande's portfolio website. 
-                         Use the provided portfolio context to answer questions about his:
+            instructions: `You are an AI assistant for ${portfolioContext?.personalInfo?.name || 'this'} portfolio website. 
+                         Use the provided portfolio context to answer questions about their:
                          - Professional experience and work history
                          - Technical skills and expertise areas
                          - Education and certifications
@@ -39,7 +39,7 @@ export class ExampleRAGService extends AIService {
                          
                          Provide helpful, accurate responses based on the portfolio data.
                          If asked about information not in the portfolio, politely indicate 
-                         that you can only provide information available in his portfolio.`
+                         that you can only provide information available in their portfolio.`
           }
         })
       });
@@ -105,7 +105,7 @@ export class OpenAIRAGService extends AIService {
         messages: [
           {
             role: 'system',
-            content: `You are an AI assistant for Prasad's portfolio. Context: ${JSON.stringify(portfolioContext)}`
+            content: `You are an AI assistant for ${portfolioContext?.personalInfo?.name || 'this'} portfolio. Context: ${JSON.stringify(portfolioContext)}`
           },
           {
             role: 'user',
@@ -137,7 +137,7 @@ export class ClaudeRAGService extends AIService {
       body: JSON.stringify({
         model: 'claude-3-sonnet-20240229',
         max_tokens: 500,
-        system: `You are an AI assistant for Prasad's portfolio. Context: ${JSON.stringify(portfolioContext)}`,
+        system: `You are an AI assistant for ${portfolioContext?.personalInfo?.name || 'this'} portfolio. Context: ${JSON.stringify(portfolioContext)}`,
         messages: [
           {
             role: 'user',
@@ -164,7 +164,7 @@ export class LocalAIService extends AIService {
       },
       body: JSON.stringify({
         model: 'llama2',
-        prompt: `You are an AI assistant for Prasad's portfolio. 
+        prompt: `You are an AI assistant for ${portfolioContext?.personalInfo?.name || 'this'} portfolio. 
                 Context: ${JSON.stringify(portfolioContext)}
                 
                 User question: ${message}

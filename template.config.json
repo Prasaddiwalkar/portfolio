@@ -1,0 +1,43 @@
+{
+  "template": {
+    "name": "Professional Portfolio Template",
+    "version": "1.0.0",
+    "description": "A modern, responsive portfolio template with AI chat integration"
+  },
+  "site": {
+    "title": "Portfolio",
+    "description": "Professional portfolio website showcasing skills, experience, and projects",
+    "favicon": "/favicon.ico",
+    "language": "en",
+    "theme": {
+      "primaryColor": "#007bff",
+      "secondaryColor": "#6c757d",
+      "accentColor": "#28a745"
+    }
+  },
+  "features": {
+    "aiChat": true,
+    "downloadResume": true,
+    "contactForm": true,
+    "projectGallery": true,
+    "skillsVisualization": true,
+    "experienceTimeline": true
+  },
+  "integrations": {
+    "analytics": {
+      "enabled": false,
+      "googleAnalyticsId": ""
+    },
+    "aiAgent": {
+      "enabled": true,
+      "endpoint": "http://localhost:8000",
+      "apiKey": ""
+    }
+  },
+  "customization": {
+    "showLastUpdated": true,
+    "enableDarkMode": false,
+    "showSocialLinks": true,
+    "showExperienceYears": true
+  }
+}

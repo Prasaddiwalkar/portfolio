@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Portfolio } from './types';
 import { fetchPortfolioData } from './services/dataService';
+import { usePortfolioTitle } from './hooks';
 import { Main } from './pages';
 import './styles/base/style.css';
 import './styles/utils/icon-styles.css';
@@ -10,6 +11,9 @@ const App: React.FC = () => {
   const [portfolio, setPortfolio] = useState<Portfolio | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Update document title dynamically based on portfolio data
+  usePortfolioTitle(portfolio?.personalInfo?.name);
 
   useEffect(() => {
     const loadData = async () => {

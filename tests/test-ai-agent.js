@@ -94,7 +94,7 @@ async function main() {
     body: JSON.stringify({
       portfolio_data: {
         personalInfo: {
-          name: 'Prasad Deshpande',
+          name: 'Test User',
           title: 'AI/ML Engineer'
         }
       },
@@ -122,10 +122,10 @@ async function main() {
       ...(API_KEY && { 'Authorization': `Bearer ${API_KEY}` })
     },
     body: JSON.stringify({
-      message: 'What is Prasad\'s experience with AI?',
+      message: 'What is the user\'s experience with AI?',
       portfolio_context: {
         personalInfo: {
-          name: 'Prasad Deshpande',
+          name: 'Test User',
           title: 'AI/ML Engineer',
           bio: 'Experienced AI engineer with expertise in machine learning and cloud technologies.'
         },

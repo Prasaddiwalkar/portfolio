@@ -77,7 +77,7 @@ const Sidebar: React.FC<SidebarProps> = ({ personalInfo }) => {
                       href={contact.link} 
                       className="contact-link"
                       {...(contact.valueKey === 'contacts.downloadCV' ? { 
-                        download: "Prasad_Deshpande_CV.pdf", 
+                        download: `${personalInfo.name.replace(' ', '_')}_CV.pdf`, 
                         target: "_blank", 
                         rel: "noopener noreferrer" 
                       } : {})}

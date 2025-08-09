@@ -29,7 +29,7 @@ describe('ExampleRAGService', () => {
       mockFetch.mockResolvedValue(mockResponse);
 
       const portfolioContext = {
-        personalInfo: { name: 'Prasad Deshpande', title: 'Developer' },
+        personalInfo: { name: 'Test User', title: 'Developer' },
         skills: ['React', 'Node.js']
       };
 
@@ -125,7 +125,7 @@ describe('ExampleRAGService', () => {
       const callArgs = mockFetch.mock.calls[0][1];
       const body = JSON.parse(callArgs.body);
       
-      expect(body.context.instructions).toContain('Prasad Deshpande\'s portfolio website');
+      expect(body.context.instructions).toContain('portfolio website');
       expect(body.context.instructions).toContain('Professional experience and work history');
       expect(body.context.instructions).toContain('Technical skills and expertise areas');
     });
@@ -184,7 +184,7 @@ describe('ExampleRAGService', () => {
       mockFetch.mockResolvedValue(mockResponse);
 
       const portfolioData = {
-        personalInfo: { name: 'Prasad', title: 'Developer' },
+        personalInfo: { name: 'Test User', title: 'Developer' },
         skills: ['React']
       };
 
@@ -198,7 +198,7 @@ describe('ExampleRAGService', () => {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer rag-api-key',
           },
-          body: expect.stringContaining('"name":"Prasad"'),
+          body: expect.stringContaining('"name":"Test User"'),
         })
       );
     });

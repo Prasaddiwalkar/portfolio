@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { getStaticResponse, suggestedQuestions } from '../../services/staticChatService';
+import portfolioData from '../../data/portfolioData.json';
 
 interface Message {
   id: string;
@@ -18,7 +19,7 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, onClose, onSendMessage }) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hi! I'm your AI assistant. I can help you learn more about Prasad's background, skills, and experience. Please use the suggested questions below to get started!",
+      text: `Hi! I'm your AI assistant. I can help you learn more about ${portfolioData.personalInfo.name}'s background, skills, and experience. Please use the suggested questions below to get started!`,
       isUser: false,
       timestamp: new Date()
     }
@@ -105,7 +106,7 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, onClose, onSendMessage }) => {
     setMessages([
       {
         id: '1',
-        text: "Hi! I'm your AI assistant. I can help you learn more about Prasad's background, skills, and experience. Please use the suggested questions below to get started!",
+        text: `Hi! I'm your AI assistant. I can help you learn more about ${portfolioData.personalInfo.name}'s background, skills, and experience. Please use the suggested questions below to get started!`,
         isUser: false,
         timestamp: new Date()
       }
@@ -275,7 +276,7 @@ const AIChat: React.FC<AIChatProps> = ({ isOpen, onClose, onSendMessage }) => {
             </button>
           </div>
           <div className="input-disabled-note">
-            <p>💡 Use the suggested questions above to explore Prasad's background. Full text input will be available once RAG integration is complete.</p>
+            <p>💡 Use the suggested questions above to explore {portfolioData.personalInfo.name}'s background. Full text input will be available once RAG integration is complete.</p>
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@ export class AIService {
       }
       
       // Return a helpful error message instead of throwing
-      return "I'm currently unable to connect to the AI assistant. Please try again in a moment, or feel free to contact Prasad directly through the provided contact information.";
+      return `I'm currently unable to connect to the AI assistant. Please try again in a moment, or feel free to contact ${context?.personalInfo?.name || 'the portfolio owner'} directly through the provided contact information.`;
     }
   }
 

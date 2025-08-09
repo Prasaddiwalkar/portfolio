@@ -1,0 +1,41 @@
+{
+  "defaultQA": [
+    {
+      "question": "What is [NAME]'s current role and experience?",
+      "answer": "**Current Role:** [CURRENT POSITION] at [COMPANY] ([START YEAR]-Present)\\n\\n**Key Responsibilities:**\\n• [RESPONSIBILITY 1]\\n• [RESPONSIBILITY 2]\\n• [RESPONSIBILITY 3]\\n\\n**Experience:** [X]+ years in [YOUR FIELD], specializing in [YOUR SPECIALIZATION].",
+      "keywords": ["experience", "role", "current", "position", "years"]
+    },
+    {
+      "question": "What technologies does [NAME] specialize in?",
+      "answer": "**Core Technologies:**\\n• **[TECH 1]** ([LEVEL]%) - [DESCRIPTION]\\n• **[TECH 2]** ([LEVEL]%) - [DESCRIPTION]\\n• **[TECH 3]** ([LEVEL]%) - [DESCRIPTION]\\n\\n**Specialized Skills:**\\n• [SKILL 1]\\n• [SKILL 2]\\n• [SKILL 3]",
+      "keywords": ["technologies", "skills", "technical", "specialization"]
+    },
+    {
+      "question": "What is [NAME]'s educational background?",
+      "answer": "**Education:**\\n• **Degree:** [YOUR DEGREE]\\n• **Institution:** [INSTITUTION NAME]\\n• **Duration:** [START YEAR] — [END YEAR]\\n• **Achievement:** [HONORS/GPA - OPTIONAL]\\n\\n**Focus Areas:**\\n• [AREA 1]\\n• [AREA 2]\\n• [AREA 3]",
+      "keywords": ["education", "degree", "university", "graduation", "academic"]
+    },
+    {
+      "question": "Where is [NAME] located and how can I contact them?",
+      "answer": "**Location:** 📍 [YOUR LOCATION]\\n\\n**Contact Information:**\\n• **Email:** [YOUR EMAIL]\\n• **Phone:** [YOUR PHONE]\\n• **LinkedIn:** [Connect on LinkedIn]([YOUR LINKEDIN])\\n\\n**Professional Documents:**\\n• **Resume:** [Download Resume]([YOUR RESUME LINK])\\n\\n*Feel free to reach out for collaboration opportunities or professional discussions!*",
+      "keywords": ["contact", "location", "email", "phone", "linkedin", "resume"]
+    },
+    {
+      "question": "What projects has [NAME] worked on?",
+      "answer": "**Recent Projects:**\\n\\n**🚀 [PROJECT 1 TITLE]**\\n• [PROJECT 1 DESCRIPTION]\\n• Technologies: [TECH LIST]\\n\\n**🔧 [PROJECT 2 TITLE]**\\n• [PROJECT 2 DESCRIPTION]\\n• Technologies: [TECH LIST]\\n\\n**Impact:** [OVERALL IMPACT OF YOUR PROJECTS]",
+      "keywords": ["projects", "portfolio", "work", "development", "applications"]
+    },
+    {
+      "question": "What services does [NAME] offer?",
+      "answer": "**Professional Services:**\\n\\n**🚀 [SERVICE 1]**\\n• [SERVICE 1 DETAILS]\\n\\n**🔧 [SERVICE 2]**\\n• [SERVICE 2 DETAILS]\\n\\n**💼 [SERVICE 3]**\\n• [SERVICE 3 DETAILS]\\n\\n*Contact me to discuss how I can help with your specific needs!*",
+      "keywords": ["services", "consulting", "development", "expertise", "professional"]
+    }
+  ],
+  "suggestedQuestions": [
+    "What is [NAME]'s current role and experience?",
+    "What technologies does [NAME] specialize in?",
+    "What is [NAME]'s educational background?",
+    "What projects has [NAME] worked on?",
+    "How can I contact [NAME]?"
+  ]
+}
